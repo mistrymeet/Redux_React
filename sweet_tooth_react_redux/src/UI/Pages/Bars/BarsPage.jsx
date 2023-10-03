@@ -6,11 +6,11 @@ import { Container } from "reactstrap";
 function BarsPage() {
   return (
     <>
-      <Content>
-        <Container className="p-0">
+      <Container className="p-0">
+        <div className="h-screen w-full text-7xl grid place-content-center">
           <h1>Bars</h1>
-        </Container>
-      </Content>
+        </div>
+      </Container>
     </>
   );
 }

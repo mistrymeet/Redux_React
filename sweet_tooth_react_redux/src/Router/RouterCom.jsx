@@ -13,6 +13,8 @@ import Profile from "../UI/Pages/Profile/Profile";
 import HeaderCom from "../UI/Components/HeaderCom/HeaderCom";
 import { Provider } from "react-redux";
 import { authStore } from "../Redux/App/Store";
+import Signup from "../UI/Pages/Signup/Signup";
+import Dashboard from "../UI/Pages/Dashboard/Dashboard";
 
 function RouterCom() {
   return (
@@ -30,6 +32,8 @@ function RouterCom() {
             <Route path="/barkits" element={<BarKits />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
         </BrowserRouter>

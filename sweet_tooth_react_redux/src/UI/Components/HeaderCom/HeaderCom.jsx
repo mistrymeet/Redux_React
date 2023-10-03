@@ -23,7 +23,7 @@ function HeaderCom() {
   const toggle = () => setIsOpen(!isOpen);
 
   const Auth = useSelector((state) => {
-    return state.AUTH.user;
+    return state?.AUTH?.user;
   });
 
   return (
@@ -77,7 +77,7 @@ function HeaderCom() {
                 <GiShoppingCart />
               </NavLink>
             </NavItem>
-            {Auth ? (
+            {JSON.stringify(Auth) !== "{}" ? (
               <NavItem>
                 <NavLink to={"/profile"}>
                   <LuUserCircle />

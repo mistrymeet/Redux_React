@@ -28,7 +28,12 @@ function HeaderCom() {
 
   return (
     <div>
-      <Navbar expand={"lg"} container={"sm"} className="flex gap-3" fixed="top">
+      <Navbar
+        expand={"lg"}
+        container={"sm"}
+        className="navigation flex backdrop-blur-sm"
+        fixed="top"
+      >
         <NavbarBrand href="">
           <NavLink to={"/"}>
             <img src="/logo.png" alt="" width={"80px"} height={"80px"} />
@@ -37,7 +42,7 @@ function HeaderCom() {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav
-            className="me-auto text-sm font-bold justify-center gap-4"
+            className="me-auto text-sm items-center font-bold justify-center gap-4"
             navbar
             style={{ flex: 2 }}
           >
@@ -62,9 +67,9 @@ function HeaderCom() {
           </Nav>
           <Nav
             style={{ flex: 1.4 }}
-            className="flex items-center gap-4 text-3xl justify-end"
+            className="scont flex items-center gap-4 text-3xl justify-center"
           >
-            <div className="w-60">
+            <div className="w-52">
               <InputGroup>
                 <Input placeholder="username" />
                 <InputGroupText className="bg-black text-white">

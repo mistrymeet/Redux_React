@@ -34,7 +34,7 @@ function SignIn() {
   return (
     <>
       <div className="signin h-screen w-full grid place-content-center">
-        <div className="w-96 p-10 form">
+        <div className="w-96 p-10 form rounded-md">
           <div className="flex items-center justify-center flex-col gap-2 pb-12">
             <h3 className="font-bold">Welcome</h3>
             <img src="/logo.png" height={"80px"} width={"80px"} alt="" />

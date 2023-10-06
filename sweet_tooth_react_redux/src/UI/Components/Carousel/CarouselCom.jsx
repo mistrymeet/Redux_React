@@ -3,7 +3,7 @@ import React from "react";
 function CarouselCom() {
   return (
     <>
-      <div className="h-screen w-full bg-cover bg-center relative bg-fixed">
+      <div className="h-full w-full bg-cover bg-center relative ">
         <img src="/Images/img4.jpg" alt="" />
         <div className="absolute top-0 z-10 drop-shadow-md">
           <img src="/Images/d4.png" alt="" />

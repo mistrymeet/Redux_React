@@ -1,0 +1,29 @@
+.offer-attach {
+    background-image: url('/Images/proinhero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.offer1 {
+    transition: 0.2s all linear;
+    border-color: black;
+}
+
+.off {
+    transition: 0.2s all linear;
+    background-color: rgba(255, 255, 255, 0.881);
+    color: black;
+}
+
+.off:hover .offer1 {
+    transform: scale(1.05);
+    border-color: chocolate;
+}
+
+.off:hover {
+    background-color: black;
+    color: white;
+}

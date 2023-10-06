@@ -17,13 +17,17 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-function HeaderCom() {
+function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   const Auth = useSelector((state) => {
     return state?.AUTH?.user;
+  });
+
+  const adminAuth = useSelector((state) => {
+    return state?.AUTH?.user?.userType === "admin";
   });
 
   return (
@@ -44,34 +48,53 @@ function HeaderCom() {
           <Nav
             className="me-auto text-sm items-center font-bold justify-center gap-4"
             navbar
-            style={{ flex: 2 }}
+            style={{ flex: 1.8 }}
           >
-            <NavItem>
-              <NavLink to={"/bars"}>Bars</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to={"/bites"}>Bites</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to={"/protine"}>Protine</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to={"/gift"}>Gift Boxes</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to={"/edition"}>Limited Editions</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to={"barkits"}>Bar Kits</NavLink>
-            </NavItem>
+            {adminAuth ? (
+              <>
+                <NavItem>
+                  <NavLink to={"/dashboard"}>Dashboard</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/dashboard/products"}>Products</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/dashboard/users"}>Users</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/dashboard/orders"}>Orders</NavLink>
+                </NavItem>
+              </>
+            ) : (
+              <>
+                <NavItem>
+                  <NavLink to={"/bars"}>Bars</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/bites"}>Bites</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/protine"}>Protine</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/gift"}>Gift Boxes</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"barkits"}>Bar Kits</NavLink>
+                </NavItem>
+              </>
+            )}
           </Nav>
           <Nav
-            style={{ flex: 1.4 }}
+            style={{ flex: 1.6 }}
             className="scont flex items-center gap-4 text-3xl justify-center"
           >
-            <div className="w-52">
+            <div className="w-60">
               <InputGroup>
-                <Input placeholder="username" />
+                <Input
+                  placeholder="username"
+                  onChange={(e) => setTextSearch(e?.target?.value)}
+                />
                 <InputGroupText className="bg-black text-white">
                   <CgSearch />
                 </InputGroupText>

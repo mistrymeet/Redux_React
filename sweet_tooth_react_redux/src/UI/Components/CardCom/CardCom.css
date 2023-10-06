@@ -1,0 +1,16 @@
+.cardimg {
+    transition: 0.1s all linear;
+}
+
+.cardimg:hover {
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.card {
+    transition: 0.1s all linear;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px black;
+}

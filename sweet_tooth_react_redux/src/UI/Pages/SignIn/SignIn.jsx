@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
-import { login } from "../../../Redux/Features/Auth/AuthSlice";
+import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./SignIn.css";
 import axios from "axios";

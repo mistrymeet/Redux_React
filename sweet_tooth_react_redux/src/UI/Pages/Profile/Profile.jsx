@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "reactstrap";
-import { logout } from "../../../Redux/Features/Auth/AuthSlice";
+import { logout } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

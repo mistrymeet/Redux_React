@@ -2,7 +2,7 @@
     transition: 0.1s all linear;
 }
 
-.cardimg:hover {
+.card:hover .cardimg {
     scale: 1.1;
     filter: drop-shadow(0px 0px 5px black);
 }

@@ -22,7 +22,7 @@ function HeaderCom({ setTextSearch }) {
 
   const toggle = () => setIsOpen(!isOpen);
 
-  const Auth = useSelector((state) => {
+  const auth = useSelector((state) => {
     return state?.AUTH?.user;
   });
 
@@ -105,7 +105,7 @@ function HeaderCom({ setTextSearch }) {
                 <GiShoppingCart />
               </NavLink>
             </NavItem>
-            {JSON.stringify(Auth) !== "{}" ? (
+            {JSON.stringify(auth) !== "{}" ? (
               <NavItem>
                 <NavLink to={"/profile"}>
                   <LuUserCircle />

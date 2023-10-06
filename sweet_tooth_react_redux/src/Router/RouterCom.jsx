@@ -13,11 +13,10 @@ import HeaderCom from "../UI/Components/HeaderCom/HeaderCom";
 import { Provider } from "react-redux";
 import { authStore } from "../Redux/App/Store";
 import Signup from "../UI/Pages/Signup/Signup";
-import Dashboard from "../UI/Pages/Dashboard/Dashboard";
-import Products from "../UI/Pages/Products/Products";
-import Users from "../UI/Pages/Users/Users";
-import Orders from "../UI/Pages/Orders/Orders";
-import Product from "../Utils/Prodcts.json";
+import Dashboard from "../UI/Pages/Admin/Dashboard/Dashboard";
+import Products from "../UI/Pages/Admin/Products/Products";
+import Users from "../UI/Pages/Admin/Users/Users";
+import Orders from "../UI/Pages/Admin/Orders/Orders";
 
 function RouterCom() {
   let [textsearch, setTextSearch] = useState("");
@@ -32,7 +31,10 @@ function RouterCom() {
               path="/bars"
               element={<BarsPage textsearch={textsearch} />}
             />
-            <Route path="/bites" element={<BitesPage />} />
+            <Route
+              path="/bites"
+              element={<BitesPage textsearch={textsearch} />}
+            />
             <Route path="/protine" element={<ProtinePage />} />
             <Route path="/gift" element={<GiftBoxesPage />} />
             <Route path="/barkits" element={<BarKits />} />

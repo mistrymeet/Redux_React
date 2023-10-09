@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import Products from "../../../Utils/Prodcts.json";
+import Products from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
 import "./Bars.css";
 

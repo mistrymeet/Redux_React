@@ -17,6 +17,7 @@ import Dashboard from "../UI/Pages/Admin/Dashboard/Dashboard";
 import Products from "../UI/Pages/Admin/Products/Products";
 import Users from "../UI/Pages/Admin/Users/Users";
 import Orders from "../UI/Pages/Admin/Orders/Orders";
+import FooterCom from "../UI/Components/FooterCom/FooterCom";
 
 function RouterCom() {
   let [textsearch, setTextSearch] = useState("");
@@ -35,9 +36,18 @@ function RouterCom() {
               path="/bites"
               element={<BitesPage textsearch={textsearch} />}
             />
-            <Route path="/protine" element={<ProtinePage />} />
-            <Route path="/gift" element={<GiftBoxesPage />} />
-            <Route path="/barkits" element={<BarKits />} />
+            <Route
+              path="/protine"
+              element={<ProtinePage textsearch={textsearch} />}
+            />
+            <Route
+              path="/gift"
+              element={<GiftBoxesPage textsearch={textsearch} />}
+            />
+            <Route
+              path="/barkits"
+              element={<BarKits textsearch={textsearch} />}
+            />
             <Route path="/cart" element={<Cart />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<Signup />} />
@@ -48,6 +58,7 @@ function RouterCom() {
             </Route>
             <Route path="/profile" element={<Profile />} />
           </Routes>
+          <FooterCom />
         </BrowserRouter>
       </Provider>
     </>

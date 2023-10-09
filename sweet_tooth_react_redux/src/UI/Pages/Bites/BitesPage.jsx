@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import Product from "../../../Utils/Prodcts.json";
+import Product from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
 
 function BitesPage({ textsearch }) {

@@ -17,7 +17,7 @@ function CardCom({ data }) {
         <CardBody className="overflow-hidden">
           <CardTitle tag="h6">{data?.title}</CardTitle>
           <CardSubtitle className="mb-2 text-muted" tag="h6">
-            {data?.price}
+            ₹ {data?.price}
           </CardSubtitle>
         </CardBody>
       </Card>

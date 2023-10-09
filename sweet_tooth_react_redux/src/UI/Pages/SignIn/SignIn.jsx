@@ -5,11 +5,13 @@ import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./SignIn.css";
 import axios from "axios";
+import { toast } from "react-toastify";
+import { MAIN_URL } from "../../../Configue";
 
 function SignIn() {
   let [userdata, setUserData] = useState({
-    email: "admin@admin.com",
-    password: "123456",
+    email: "",
+    password: "",
   });
 
   let dispatch = useDispatch();
@@ -19,8 +21,9 @@ function SignIn() {
   function addData() {
     console.log("userdata", userdata);
     axios
-      .post("http://localhost:3000/user/signin", userdata)
+      .post(`${MAIN_URL}user/signin`, userdata)
       .then((resData) => {
+        toast.success("login successfully");
         dispatch(login(resData?.data));
         if (resData?.data?.data?.userType === "admin") {
           navigate("/dashboard");
@@ -28,6 +31,7 @@ function SignIn() {
       })
       .catch((err) => {
         console.log("err", err);
+        toast.error(err?.message);
       });
   }
 

@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "reactstrap";
-import ProductForm from "./ProductForm";
 import ProductTable from "./ProductTable";
+import ProductForm from "./ProductForm";
+import { useDispatch } from "react-redux";
+import { fetchData } from "../../../../Redux/Features/ProductSlice/ProSlice";
+import Product from "../../../../Utils/Product.json";
 
 function Products() {
+  let dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchData());
+  }, []);
   return (
     <>
       <Container>
-        <h1 className="bg-amber-200 grid place-content-center text-3xl h-screen w-full">
-          <ProductForm />
-          <ProductTable />
-        </h1>
+        <ProductTable />
+        <ProductForm />
       </Container>
     </>
   );

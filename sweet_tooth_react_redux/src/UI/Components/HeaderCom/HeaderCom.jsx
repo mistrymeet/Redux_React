@@ -23,11 +23,11 @@ function HeaderCom({ setTextSearch }) {
   const toggle = () => setIsOpen(!isOpen);
 
   const auth = useSelector((state) => {
-    return state?.AUTH?.user;
+    return state?.authReducer?.user;
   });
 
   const adminAuth = useSelector((state) => {
-    return state?.AUTH?.user?.userType === "admin";
+    return state?.authReducer?.user?.userType === "admin";
   });
 
   return (
@@ -92,7 +92,7 @@ function HeaderCom({ setTextSearch }) {
             <div className="w-60">
               <InputGroup>
                 <Input
-                  placeholder="username"
+                  placeholder="search here"
                   onChange={(e) => setTextSearch(e?.target?.value)}
                 />
                 <InputGroupText className="bg-black text-white">

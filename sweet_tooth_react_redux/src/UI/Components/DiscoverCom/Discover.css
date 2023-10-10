@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.text {
+    font-family: 'Cormorant Garamond', serif !important;
+}
+
+.discover .dimg1 {
+    background-image: url('/Images/img7.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 50px 0px 0px 0px;
+    box-shadow: 0px 0px 5px black;
+
+}
+
+.discover .dimg2 {
+    background-image: url("/Images/img10.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 0px 0px 50px 0px;
+}

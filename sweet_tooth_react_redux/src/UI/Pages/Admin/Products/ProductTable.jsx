@@ -1,39 +1,46 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { Table } from "reactstrap";
+import { fetchData } from "../../../../Redux/Features/ProductSlice/ProSlice";
 
 function ProductTable() {
+  const { product, err } = useSelector((state) => {
+    return state?.productReducer;
+  });
+
   return (
-    <div className="bg-amber-200 grid place-content-center h-auto py-20 w-full">
+    <div>
       <Table bordered>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>Sr</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {product?.map?.((e, i) => {
+            return (
+              <tr key={e?.id}>
+                <th scope="row">{i + 1}</th>
+                <td>
+                  <div className="grid place-content-center">
+                    <img
+                      src={e?.thumbnail}
+                      alt=""
+                      className="max-w-xs max-h-60"
+                    />
+                  </div>
+                </td>
+                <td>{e?.title}</td>
+                <td className="truncate max-w-lg">{e?.description}</td>
+                <td>{e?.price}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </Table>
     </div>

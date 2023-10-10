@@ -1,555 +1,1424 @@
 [
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainyBilly_wBite_600x.png?v=1683204654",
         "title": "NEW GRAINY BILLY",
-        "price": " 135",
+        "price": 135,
+        "description": "A creamy mix of coconut, white chocolate and cranberry coated with premium milk chocolate. A perfect taste experience for those who love coconut, sun and summer.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainyBilly_wBite_600x.png?v=1683204654",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "79"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_MintyMoment_wBite_7731edf4-996b-4814-b414-6166be3fb269_600x.png?v=1683711428",
         "title": "MINTY MOMENT",
-        "price": " 135",
+        "price": 135,
+        "description": "Minty Moment brings together the magical moments of spring in a combined taste experience. Surrounded by premium dark chocolate, you meet an interior of white chocolate with a slight hint of fresh mint mixed with matcha tea and crunch. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_MintyMoment_wBite_7731edf4-996b-4814-b414-6166be3fb269_600x.png?v=1683711428",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "2"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_CreamyCarol_wBite_600x.png?v=1683204306",
         "title": "CREAMY CAROL",
-        "price": " 135",
+        "price": 135,
+        "description": "For fans of soft caramel, there is no one better than Carol. Imagine the cracking of premium dark chocolate between your teeth as the softest and creamiest caramel flows into your mouth.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_CreamyCarol_wBite_600x.png?v=1683204306",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "3"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_DarkMarci_wBite_a29470d4-c2a0-47b8-b2a3-25ffe45dcc6b_600x.png?v=1683204412",
         "title": "DARK MARCI",
-        "price": " 135",
+        "price": 135,
+        "description": "Double layer of premium dark chocolate with a center of marzipan made of Valencia almonds. A refined mix of sweet and slightly bitter gives the known classic something extraordinary.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_DarkMarci_wBite_a29470d4-c2a0-47b8-b2a3-25ffe45dcc6b_600x.png?v=1683204412",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "4"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_CrispyCarrie_wBIte_58f90473-2bcb-47d1-ab88-c7ffee024376_600x.png?v=1683204358",
         "title": "CRISPY CARRIE",
-        "price": " 135",
+        "price": 135,
+        "description": "A fashionable mix of flaky salt with crunchy homemade caramel pieces enveloped in the softest coat of premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_CrispyCarrie_wBIte_58f90473-2bcb-47d1-ab88-c7ffee024376_600x.png?v=1683204358",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "5"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_PersianPerry_wBite_600x.png?v=1683204705",
         "title": "PERSIAN PERRY",
-        "price": " 135",
+        "price": 135,
+        "description": "White chocolate with real Persian liqorice, which also delivers on crunch. The liqorice is a bit more bitter than regular soft liqorice, and is therefore a perfect counterpoint to the sweet white chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_PersianPerry_wBite_600x.png?v=1683204705",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "6"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SaltyFred_wBite_0731dded-7ea3-459b-9f54-a6302980cdc6_600x.png?v=1686813859",
         "title": "SALTY FRED",
-        "price": " 135",
+        "price": 135,
+        "description": "Premium dark chocolate with roasted, salted almonds, known for their high quality. The salty hint and the fruity chocolate are in perfect balance.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SaltyFred_wBite_0731dded-7ea3-459b-9f54-a6302980cdc6_600x.png?v=1686813859",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "7"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainySue_wBite_400x.png?v=1683204521",
         "title": "GRAINY SUE",
-        "price": " 135",
+        "price": 135,
+        "description": "Homemade base of caramel, peanuts, spelt and oats coated with premium dark chocolate. The dark chocolate layer in combination with a soft, slightly chewy internal which gives Sue the first place in many.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainySue_wBite_400x.png?v=1683204521",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "8"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SantasFavorite_wBite_600x.png?v=1683204994",
         "title": "SANTA'S FAVORITE",
-        "price": " 135",
+        "price": 135,
+        "description": "Created with the love of natural ingredients and craftsmanship, you get Christmas gathered in a bar. The crunchy layer of premium dark chocolate melts in the mouth and reveals secret surprises of a sophisticated mix of soft dates and crunchy almonds with a delicate hint of orange and cinnamon.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SantasFavorite_wBite_600x.png?v=1683204994",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "9"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SecretSanta_wBite_600x.png?v=1683205013",
         "title": "SECRET SANTA",
-        "price": " 135",
+        "price": 135,
+        "description": "Double layer of premium dark chocolate with a center of marzipan made from almonds from Valencia. A refined mix of sweet and slightly bitter gives this classic something quite extraordinary.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SecretSanta_wBite_600x.png?v=1683205013",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "10"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_Lovebar_wBite_64677928-6ec5-400c-ba12-9f576fe35e04_600x.png?v=1683204600",
         "title": "LOVEBAR",
-        "price": " 135",
+        "price": 135,
+        "description": "﻿Simply Chocolate have partnered up with the World Pride-organization. We are proud and happy to contribute with a chocolate bar where a part of the profit are donated to this non-profit organization which fights for human rights, freedom and diversity - all in the name of love. These values are, amonge several values, common for the World Pride-organization and Simply Chocolate. It is therefore a carefully considered partnership where all the parallels are the closest you will get to a perfect match.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_Lovebar_wBite_64677928-6ec5-400c-ba12-9f576fe35e04_600x.png?v=1683204600",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "11"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_TastingPack_wBite_600x.png?v=1683639614",
         "title": "FOR ALL YOUR SENSES 14 PACK",
-        "price": " 1500",
+        "price": 1500,
+        "description": "Here is the package for the versatile chocolatier who wants to explore the Simply universe and taste his way through our entire family of premium chocolate bars. Sit back and enjoy a total of 7 different flavors, each with its own flavor expression. The perfect gift idea for the chocolate lover or a unique self-indulgence package.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_TastingPack_wBite_600x.png?v=1683639614",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "12"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_CrispyCarrie_Open_600x.png?v=1683205044",
         "title": "SHARING BAR CRISPY CARRIE",
-        "price": " 218",
+        "price": 218,
+        "description": "A fashionable mix of flaky salt with crunchy homemade caramel pieces enveloped in the softest coat of premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_CrispyCarrie_Open_600x.png?v=1683205044",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "13"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_PersianPerry_Open_400x.png?v=1683205089",
         "title": "SHARING BAR PERSIAN PERRY",
-        "price": " 218",
+        "price": 218,
+        "description": "White chocolate with real Persian liqorice, which also delivers on crunch. The liqorice is a bit more bitter than regular soft liqorice, and is therefore a perfect counterpoint to the sweet white chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_PersianPerry_Open_400x.png?v=1683205089",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "14"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_SaltyFred_Open_600x.png?v=1683205108",
         "title": "SHARING BARS SALTY FRED",
-        "price": " 218",
+        "price": 218,
+        "description": "Premium dark chocolate with roasted, salted almonds, known for their high quality. The salty hint and the fruity chocolate are in perfect balance.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_SaltyFred_Open_600x.png?v=1683205108",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "15"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_MintyMoment_Open_43fe2ce8-e8e3-420c-b921-46c8a1423895_600x.png?v=1684307095",
         "title": "SHARING BAR MINTY MOMENT",
-        "price": " 218",
+        "price": 218,
+        "description": "Minty Moment brings together the magical moments of spring in a combined taste experience. Surrounded by premium dark chocolate, you meet an interior of white chocolate with a slight hint of fresh mint mixed with matcha tea and crunch. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/SharingBar_MintyMoment_Open_43fe2ce8-e8e3-420c-b921-46c8a1423895_600x.png?v=1684307095",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "16"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_GlutenFreePack_wBite_600x.png?v=1684308937",
         "title": "GLUTENFREE 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Here is the package for you who would like to enjoy a premium experience of exquisite chocolate completely without gluten. Our gluten-free 12-pack gives you a taste experience of 6 of our popular chocolate bars. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_GlutenFreePack_wBite_600x.png?v=1684308937",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "17"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_VeganPack_wBite_600x.png?v=1684307796",
         "title": "VEGAN 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Two of our bestselling chocolate bars also happen to be vegan, which is why we've created a 12-pack for all those looking for premium vegan products.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_VeganPack_wBite_600x.png?v=1684307796",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "18"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_MintyMoment_Pack_wBite_600x.png?v=1687951998",
         "title": "MINTY MOMENT",
-        "price": " 1350",
+        "price": 1350,
+        "description": "This limited edition spring chocolate quickly brings to mind birdsong, budding flowers and the smell of summer rain. Welcome spring with Minty Moment. We dare to promise that there is a new chocolate crush for many here!",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_MintyMoment_Pack_wBite_600x.png?v=1687951998",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "19"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_Lovebar_Pack_wBite_600x.png?v=1683711285",
         "title": "LOVE 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "﻿Simply Chocolate have partnered up with the World Pride-organization. We are proud and happy to contribute with a chocolate bar where a part of the profit are donated to this non-profit organization which fights for human rights, freedom and diversity - all in the name of love. These values are, amonge several values, common for the World Pride-organization and Simply Chocolate. It is therefore a carefully considered partnership where all the parallels are the closest you will get to a perfect match.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_Lovebar_Pack_wBite_600x.png?v=1683711285",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "20"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_CrispyCarrie_Pack_wBite_600x.png?v=1683711230",
         "title": "CRISPY CARRIE 12 PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Carrie is the number 1 in many of our chocolate lovers hearts. And for a good reason. The salty caramel crunch is the best you will ever taste. Ever. And one is never enough. That's why we've listened and launched a 12 pack.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_CrispyCarrie_Pack_wBite_600x.png?v=1683711230",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "21"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_DarkMarci_Pack_wBite_600x.png?v=1683711246",
         "title": "DARK MARCI 12 PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Marci-fans! We have listened to you, so now an exclusiv 12-pack is available online. Some things just always works - especially when it comes to marzipan and dark chocolate. And of course we have double coated the bars, so the marzipan and chocolate are balanced to perfection.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_DarkMarci_Pack_wBite_600x.png?v=1683711246",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "22"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_CreamyCarol_Pack_wBite_600x.png?v=1684304895",
         "title": "CREAMY CAROL 12 PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "We all know a special person with the softest inside. The one who always comforts you and has something nice to offer so you feel at your best. Meet Carol - she's one of those people we all need in our lives. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_CreamyCarol_Pack_wBite_600x.png?v=1684304895",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "23"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_PersianPerry_Pack_wBite_600x.png?v=1684305096",
         "title": "PERSIAN PERRY 12 PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "'I don't like white chocolate' they said. “Try the Persian Perry” we said. 'Game changer' they said. There is a reason why Persian Perry has been named one of the world's best chocolate bars.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_PersianPerry_Pack_wBite_600x.png?v=1684305096",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "24"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainySue_Pack_wBite_600x.png?v=1684305587",
         "title": "GRAINY SUE 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Homemade base of caramel, peanuts, spelled and organic oats coated with premium dark chocolate. The dark chocolate shell in combination with a soft, slightly chewy interior gives Sue first place in the hearts of many.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainySue_Pack_wBite_600x.png?v=1684305587",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "25"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SaltyFred_Pack_wBite_600x.png?v=1686815484",
         "title": "SALTY FRED 12 PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Your taste buds will thank you the second the dark chocolate hits your tongue. And when the salted almonds slowly break the chocolate - well, your taste buds will probably never be quite the same again.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SaltyFred_Pack_wBite_600x.png?v=1686815484",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "26"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainyBilly_Pack_wBite_600x.png?v=1684306161",
         "title": "GRAINY BILLY 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Billy should really come with a pair of flip flops and a sun hat. The exquisite taste of coconut quickly makes you think of crystal blue seas and magical sunsets. And who doesn't love that? Let yourself be seduced by the dream of pristine palm beaches and enjoy a Grainy Billy bar - now coated with the most delicious premium milk chocolate. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_GrainyBilly_Pack_wBite_600x.png?v=1684306161",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "27"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SecretSanta_Pack_wBite_270096c0-55a2-4420-859f-8d5bc9d714f6_600x.png?v=1695282224",
         "title": "SECRET SANTA 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Hun er en klassiker, som alle bare vil sætte tænderne i til jul. Hun er indbegrebet af den mest elskede julesnack. Og nu i det fineste juleoutfit, så hun kan sprede julestemning hos alle.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SecretSanta_Pack_wBite_270096c0-55a2-4420-859f-8d5bc9d714f6_600x.png?v=1695282224",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "28"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SantasFavorite_Pack_wBite_600x.png?v=1695131080",
         "title": "SANTA'S FAVORITE 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Created with love for natural ingredients and craftsmanship, you get Christmas gathered in a bar. The crunchy layer of premium dark chocolate melts in the mouth and reveals secret surprises of a sophisticated mix of soft dates and crunchy almonds with a delicate hint of orange and cinnamon.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SantasFavorite_Pack_wBite_600x.png?v=1695131080",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "78"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKguldbar_Pack_wBite_600x.png?v=1685516322",
         "title": "FCK THE GOLDEN BAR 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "The gold bar - a thick shell of premium dark chocolate with a centre the softest, creamiest caramel. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKguldbar_Pack_wBite_600x.png?v=1685516322",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "30"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKbar_Pack_wBite_600x.png?v=1684306379",
         "title": "FCK CHOCOLATE BAR 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "A fashionable mix of flaky salt with crunchy homemade caramel pieces enveloped in the softest coat of premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKbar_Pack_wBite_600x.png?v=1684306379",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "31"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_FCKGoldPack_wBite_600x.png?v=1685520054",
         "title": "FCK MIX 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Congratulations to F.C. Copenhagen with The Double 2023! As proud business partners, we have created three unique FCK bars so you can celebrate the season's successes with premium chocolate and protein bars. Taste 4 pcs. of each variant.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_FCKGoldPack_wBite_600x.png?v=1685520054",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "32"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_FCKPack_wBite_600x.png?v=1685610599",
         "title": "FCK THE DOUBLE 12-PACK",
-        "price": " 1350",
+        "price": 1350,
+        "description": "Get ready for match day with our premium FCK chocolate and protein bar. In our blue chocolate bar, you get an exquisite treat with premium milk chocolate and crunchy caramel - a sure winner that tastes sweet with victory. If you are looking for a slightly more protein-rich alternative, but without compromising on taste, we have the FCK protein bar with 22% protein, almonds, passion fruit and premium dark chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bars",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_FCKPack_wBite_600x.png?v=1685610599",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "33"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_ProteinAllinMix_wDunk_600x.png?v=1683711185",
         "title": "ALL IN MIX PROTEIN PACK",
-        "price": " 2700",
+        "price": 2700,
+        "description": "In this mix pack you get 7x Sixpack Sally, 7x Speedy Tom and 7x Rich Arnold. All with only natural ingredients and no artificial sweeteners, but exquisite premium chocolate. Approx. 156-177 kcal. per bar.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_ProteinAllinMix_wDunk_600x.png?v=1683711185",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "34"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_RichArnold_Pack_wBite_600x.png?v=1683711308",
         "title": "RICH ARNOLD 12 PACK",
-        "price": " 1500",
+        "price": 1500,
+        "description": "Sweet dates just taste so much better than artificial sweetener. That is why Rich Arnold also are a gym favorite with his antioxidants, peanuts, protein, caramel, organic dates and premium dark chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_RichArnold_Pack_wBite_600x.png?v=1683711308",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "76"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SpeedyTom_Pack_wBite_600x.png?v=1683711352",
         "title": "SPEEDY TOM 12 PACK",
-        "price": " 1500",
+        "price": 1500,
+        "description": "We challenge you to try Tom and tell us it's not the best cocoa protein bar you've ever tasted. Seriously, it's like having an inner voice that pushes you to go the extra mile.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SpeedyTom_Pack_wBite_600x.png?v=1683711352",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "36"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SixpackSally_Pack_600x.png?v=1683711332",
         "title": "SIXPACK SALLY 12 PACK",
-        "price": " 1500",
+        "price": 1500,
+        "description": "The perfect protein bar mix, you ask? Caramel and crunch are an all time winner. Yuzu adds a little kick and the organic sesame brings the taste to a whole new level. Coat the wonder in premium milk chocolate - do we need to say more?",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SixpackSally_Pack_600x.png?v=1683711332",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "37"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKproteinbar_Pack_wBite_600x.png?v=1683711264",
         "title": "FCK PROTEIN BAR 12 PACK",
-        "price": " 1500",
+        "price": 1500,
+        "description": "Get energy for match day with our brand new FCK protein bar. A delicate mix of almonds, passion fruit and premium dark chocolate. 22% protein per bar.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKproteinbar_Pack_wBite_600x.png?v=1683711264",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "38"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_RichArnold_wBite_b9c28dcd-34c1-4121-8aec-76209adf01c0_600x.png?v=1683204757",
         "title": "RICH ARNOLD",
-        "price": " 150",
+        "price": 150,
+        "description": "Sweet dates just taste so much better than artificial sweetener. That is why Rich Arnold also are a gym favorite with his antioxidants, peanuts, protein, caramel, organic dates and premium dark chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_RichArnold_wBite_b9c28dcd-34c1-4121-8aec-76209adf01c0_600x.png?v=1683204757",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "39"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SpeedyTom_wBite_52328148-683b-4a1d-b056-0d4b13b92cea_400x.png?v=1683205222",
         "title": "SPEEDY TOM",
-        "price": " 150",
+        "price": 150,
+        "description": "Cocoa, acai and passionfruit coated with premium dark chocolate will difinitely accelerate your refined taste for natural protein bars.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SpeedyTom_wBite_52328148-683b-4a1d-b056-0d4b13b92cea_400x.png?v=1683205222",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "40"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_SixpackSally_wBite_b4f440dd-290c-4844-9f71-985e3dec35ce_600x.png?v=1683205168",
         "title": "SIXPACK SALLY",
-        "price": " 150",
+        "price": 150,
+        "description": "",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_SixpackSally_wBite_b4f440dd-290c-4844-9f71-985e3dec35ce_600x.png?v=1683205168",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "29"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKproteinbar_wBite_600x.png?v=1683204454",
         "title": "FCK CUSTOMIZED PROTEIN BAR",
-        "price": " 150",
+        "price": 150,
+        "description": "Get energy for match day with our brand new FCK protein bar. A delicate mix of almonds, passion fruit and premium dark chocolate. 22% protein per bar.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "protine",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bar_FCKproteinbar_wBite_600x.png?v=1683204454",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "45"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_MintyCindy_wBite_600x.png?v=1693560046",
-        "title": "FCK CUSTOMIZED PROTEIN BAR",
-        "price": " 3000",
+        "title": "MINTY CINDY BOX WITH 75 PCS. BITES",
+        "price": 3000,
+        "description": "Minty Cindy unites the magical moments of spring in a unified taste experience. Surrounded by premium dark chocolate, you meet an interior of white chocolate with a slight hint of fresh mint mixed with matcha tea and crunch. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_MintyCindy_wBite_600x.png?v=1693560046",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "64"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_MixedSolid_wBite_600x.png?v=1683204147",
         "title": "SOLID MIX BOX WITH 75 PCS. BITES",
-        "price": " 3150",
+        "price": 3150,
+        "description": "Crispy Carrie is crunchy caramel, flake salt and premium milk chocolate. Salty Fred is salted, toasted almonds and premium dark chocolate. Persian Perry is Persian liqorice and premium white chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_MixedSolid_wBite_600x.png?v=1683204147",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "44"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_MixedBites_wBite_600x.png?v=1683203914",
         "title": "GRAINY MIX BOX WITH 75 PCS. BITES",
-        "price": " 3150",
+        "price": 3150,
+        "description": "Dark Marci is marzipan of Valencian almonds and a double layer of premium dark chocolate. Fresh Freddie is spelt, mint, coconut and premium dark chocolate. Grainy Sue is oats, spelt, peanuts, caramel and premium dark chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_MixedBites_wBite_600x.png?v=1683203914",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "41"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_PersianPerry_Open_600x.png?v=1683203946",
         "title": "PERSIAN PERRY BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "White chocolate with real Persian liqorice, which also delivers on crunch. The liqorice is a bit more bitter than regular soft liqorice, and is therefore a perfect counterpoint to the sweet white chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_PersianPerry_Open_600x.png?v=1683203946",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "46"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_GrainyBilly_wBite_600x.png?v=1683203853",
         "title": "NEW GRAINY BILLY BOX MED 75 STK. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "A creamy mix of coconut, white chocolate and cranberry coated with premium milk chocolate. A perfect taste experience for those who love coconut, sun and summer.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_GrainyBilly_wBite_600x.png?v=1683203853",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "47"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_DarkMarci_wBiten_600x.png?v=1683203337",
         "title": "DARK MARCI BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Double layer of premium dark chocolate with a center of marzipan made of Valencia almonds. A refined mix of sweet and slightly bitter gives the known classic something extraordinary.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_DarkMarci_wBiten_600x.png?v=1683203337",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "48"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_CrispyCarrie_wBite_600x.png?v=1683203302",
         "title": "CRISPY CARRIE BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "A fashionable mix of flaky salt with crunchy homemade caramel pieces enveloped in the softest coat of premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_CrispyCarrie_wBite_600x.png?v=1683203302",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "49"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_CreamyCarol_wBite_600x.png?v=1683203271",
         "title": "CREAMY CAROL BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "For fans of soft caramel, there is no one better than Carol. Imagine the cracking of premium dark chocolate between your teeth as the softest and creamiest caramel flows into your mouth.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_CreamyCarol_wBite_600x.png?v=1683203271",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "50"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_MoccaMolly_wBite_600x.png?v=1683203738",
         "title": "MOCCA MOLLY BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Take a sip of coffee and bite into a piece of premium dark chocolate, where the taste of crunchy coffee beans tickles your tongue. Simply da perfect chocolate bite for the coffee lover.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_MoccaMolly_wBite_600x.png?v=1683203738",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "51"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_PinkPolly_Open_600x.png?v=1683203972",
         "title": "PINK POLLY BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "The perfect balance between a hint of raspberry and a little delicate crunch from Persian licorice fused in premium white chocolate. Polly both looks like a superstar and tastes like one. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_PinkPolly_Open_600x.png?v=1683203972",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "52"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_SaltyFred_uden71-4_wBite_6e83880a-5692-415a-bf22-5a5d21ececef_600x.png?v=1683207856",
         "title": "SALTY FRED BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Premium dark chocolate with roasted, salted almonds, known for their high quality. The salty hint and the fruity chocolate are in perfect balance.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_SaltyFred_uden71-4_wBite_6e83880a-5692-415a-bf22-5a5d21ececef_600x.png?v=1683207856",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "53"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_CrispyCarrie_wBite_600x.png?v=1683203584",
         "title": "LOVE AT FIRST BITE BOX MED 75 STK. CRISPY CARRIE BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "A mix of flaky salt and crunchy homemade caramel pieces embraced in the softest coat of premium milk chocolate. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_CrispyCarrie_wBite_600x.png?v=1683203584",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "54"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_PersianPerry_wBite_600x.png?v=1683203829",
         "title": "MY ONE AND ONLY BOX MED 75 STK. BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Premium white chocolate with real Persian licorice, which also delivers on crunch. Licorice is a bit more bitter than ordinary. soft licorice, and is therefore a perfect counterpoint to the sweet, white chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_PersianPerry_wBite_600x.png?v=1683203829",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "55"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_DarkMarci_wBite_600x.png?v=1683204176",
         "title": "TRUE LOVE BOX WITH 75 PCS. DARK MARCI BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Double layer of premium dark chocolate with a center of marzipan made from almonds from Valencia. A refined mix of sweet and slightly bitter gives this classic something quite extraordinary.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_DarkMarci_wBite_600x.png?v=1683204176",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "56"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_Mixed_wBite_600x.png?v=1683203780",
         "title": "MOMENTS OF LOVE BOX MED 75 STK. MIX BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "In this mix box you get 75 chocolates divided between Dark Marci, Crispy Carrie and Persian Perry bites. There is guaranteed to be something for every taste among the party's guests.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Bryllup_Mixed_wBite_600x.png?v=1683203780",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "57"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_SantasFavorite_wBite_600x.png?v=1684830956",
         "title": "SANTA'S FAVORITE BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Your daily Christmas snack. After a crunchy layer of premium dark chocolate, you meet the taste of Christmas itself. We have taken the essence of traditional Christmas and brought it together in a sophisticated mix of soft dates and crunchy almonds with a delicate hint of orange and cinnamon.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_SantasFavorite_wBite_600x.png?v=1684830956",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "58"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_LoveBite_wBite_600x.png?v=1683203624",
         "title": "LOVE BITE BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "﻿Simply Chocolate have partnered up with the World Pride-organization. We are proud and happy to contribute with a chocolate bar where a part of the profit are donated to this non-profit organization which fights for human rights, freedom and diversity - all in the name of love. These values are, amonge several values, common for the World Pride-organization and Simply Chocolate. It is therefore a carefully considered partnership where all the parallels are the closest you will get to a perfect match.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_LoveBite_wBite_600x.png?v=1683203624",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "59"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_FCK_wBite_600x.png?v=1683203369",
         "title": "FCK CHOCOLATE BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "A fashionable mix of flaky salt with crunchy homemade caramel pieces embraced in the softest coat of premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_FCK_wBite_600x.png?v=1683203369",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "60"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_GrainySue_wBite_400x.png?v=1683203395",
         "title": "GRAINY SUE BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Homemade base of caramel, peanuts, spelt and oats coated with premium dark chocolate. The dark chocolate layer in combination with a soft, slightly chewy internal which gives Sue the first place in many.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_GrainySue_wBite_400x.png?v=1683203395",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "61"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/BarGlas_S_YouMeCoffeeNow_600x.png?v=1688453528",
         "title": "YOU ME COFFEE NOW A MATCH MADE IN HEAVEN",
-        "price": " 850",
+        "price": 850,
+        "description": "Is there anything better than enjoying a good cup of coffee together and exploring a glass full of natural chocolates. Let yourself be seduced by the inviting colors and taste yourself through 5 unique flavor combinations. There are of course 2 of each, so you can share the experience. As always, completely without artificial additives.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/BarGlas_S_YouMeCoffeeNow_600x.png?v=1688453528",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "62"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Akrykasse_Mixed_Christmas_600x.png?v=1693401897",
         "title": "THE CHRISTMAS BOX AKRYLBOX MED 42 BITES",
-        "price": " 2700",
+        "price": 2700,
+        "description": "In green and red stripes you will find Santa's Favorite, which is a mix of soft dates and crunchy almonds with a delicate hint of orange and cinnamon. Dressed in green with red Christmas hearts, you'll find Secret Santa, which is marzipan and a double layer of premium dark chocolate. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Akrykasse_Mixed_Christmas_600x.png?v=1693401897",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "63"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Akrykasse_Mixed_600x.png?v=1683206838",
         "title": "MIX AKRYLBOX MED 40 BITES",
-        "price": " 2700",
+        "price": 2700,
+        "description": "Discover 8 of our popular varieties of chocolate bites. Maybe you discover a new favorite? The reusable box is perfect for both the office, the living room or the obvious gift. Who wouldn't be happy with a box full of premium chocolates?",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Akrykasse_Mixed_600x.png?v=1683206838",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "77"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_SecretSanta_Open_600x.png?v=1683204105",
         "title": "DARK MARCI BOX WITH 75 PCS. BITES",
-        "price": " 3000",
+        "price": 3000,
+        "description": "Double layer of premium dark chocolate with a center of marzipan made of Valencia almonds. A refined mix of sweet and slightly bitter gives the known classic something extraordinary.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_SecretSanta_Open_600x.png?v=1683204105",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "65"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_SaltyFred_wBite_600x.png?v=1683203561",
         "title": "CONFIRMAND BOX WITH 75 PCS. SALTY FRED BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Premium dark chocolate with roasted, salted almonds, known for their always high quality. The salty hint and the fruity chocolate are in perfect balance. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_SaltyFred_wBite_600x.png?v=1683203561",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "66"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_CrispyCarrie_wBite_600x.png?v=1683203462",
         "title": "CONFIRMAND BOX WITH 75 PCS. CRISPY CARRIE BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Create an unforgettable party for the confirmand with the chocolate that decorates the table and spreads joy among the guests - children and adults. Because, although confirmation marks the transition to the ranks of adults, it does not mean a farewell to the joys of childhood. Especially not the chocolate!",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_CrispyCarrie_wBite_600x.png?v=1683203462",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "67"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_DarkMarci_wBite_600x.png?v=1683203493",
         "title": "CONFIRMAND BOX WITH 75 PCS. DARK MARCI BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Create an unforgettable party for the confirmand with the chocolate that decorates the table and spreads joy among the guests - children and adults. Because, although confirmation marks the transition to the ranks of adults, it does not mean a farewell to the joys of childhood. Especially not the chocolate!",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_DarkMarci_wBite_600x.png?v=1683203493",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "68"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_Mixed_wBite_600x.png?v=1683203539",
         "title": "CONFIRMAND BOX WITH 75 PCS. MIX BITES",
-        "price": " 3250",
+        "price": 3250,
+        "description": "Create an unforgettable party for the confirmand with the chocolate that decorates the table and spreads joy among the guests - children and adults. Because, although confirmation marks the transition to the ranks of adults, it does not mean a farewell to the joys of childhood. Especially not the chocolate!",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "bits",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bite_Konfirmand_Mixed_wBite_600x.png?v=1683203539",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "69"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_Boxes_YesYouCanBuyLove_ThisIsMoreThanJustChocolate_Open_600x.png?v=1684490387",
         "title": "FOR CHOCOLATE LOVERS 2 PREMIUM BOXES",
-        "price": " 2700",
+        "price": 2700,
+        "description": "It can be difficult to be creative and come up with a good gift. But don't worry about that! With this chocolate gift, there is a 99.9999% satisfaction guarantee for the lucky recipient. Because, who wouldn't light up with a big smile if they were treated to premium chocolate? Handmade in Copenhagen with only the best natural ingredients. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_Boxes_YesYouCanBuyLove_ThisIsMoreThanJustChocolate_Open_600x.png?v=1684490387",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "70"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Bundle_Boxes_YesYouCanBuyLove_InsteadOfFlowers_Open_600x.png?v=1684490273",
         "title": "THE GIFT OF LOVE 2 PREMIUM ÆSKER",
-        "price": " 2700",
+        "price": 2700,
+        "description": "We have put together our two best-selling gift boxes 'Yes You can Buy Love' 24 pcs. and 'Instead of Flowers' 12 pieces, so you have the perfect gift for the chocolate lover. In the boxes you will find 100% natural and handmade premium chocolates, which offer flavors for every taste. ",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Bundle_Boxes_YesYouCanBuyLove_InsteadOfFlowers_Open_600x.png?v=1684490273",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "71"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_InsteadOfFlowers_bf8b80b8-ef92-4f5c-9c16-cd984eb935a7_600x.png?v=1683207137",
         "title": "INSTEAD OF FLOWERS BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "Crispy Carrie is crunchy caramel, sea salt and premium milk chocolate. Salty Fred is salty, roasted almonds with premium dark chocolate. Mocca Molly is crunchy coffeebeans with premium dark chocolate.Pink Polly is raspberry and Persian liqorice with premium white chocolate. Persian Perry is Persian liqorice with premium white chocolate.Crunchy Coco is crunchy coconut with premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_InsteadOfFlowers_bf8b80b8-ef92-4f5c-9c16-cd984eb935a7_600x.png?v=1683207137",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "72"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_EnjoyTheLastSupper_400x.png?v=1683205486",
         "title": "ENJOY AFTER LAST SUPPER PACK WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "In fact, you can enjoy these delicious chocolates before, during and after any meal.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_EnjoyTheLastSupper_400x.png?v=1683205486",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "73"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_FreshFromTheFarm_400x.png?v=1683205526",
         "title": "FRESH FROM THE FARM BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "They are probably not chocolate eggs laid by a hen, but chocolate eggs completely fresh from our production in Copenhagen.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_FreshFromTheFarm_400x.png?v=1683205526",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "74"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_24_YesYouCanBuyLove_2f18fdd2-2bed-4a77-9409-fffe3b1c490e_400x.png?v=1683207032",
         "title": "YES, YOU CAN BUY LOVE BOX WITH 24 PCS.",
-        "price": " 1800",
+        "price": 1800,
+        "description": "Crispy Carrie is crunchy caramel, flaky salt and premium milk chocolate. Salty Fred are salted, roasted almonds with premium dark chocolate. Mocca Molly are crunchy coffee beans with premium dark chocolate.Pink Polly is raspberry and Persian liqorice with premium white chocolate.Persian Perry is Persian liqorice with premium white chocolate.Crunchy Coco is crunchy coconut with premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_24_YesYouCanBuyLove_2f18fdd2-2bed-4a77-9409-fffe3b1c490e_400x.png?v=1683207032",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "75"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_ThisIsMoreThanJustChocolate_400x.png?v=1683205663",
         "title": "MORE THAN JUST CHOCOLATE BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "Go exploring in a chocolate box full of personality..",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_ThisIsMoreThanJustChocolate_400x.png?v=1683205663",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "35"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_LoveIsInTheAir_400x.png?v=1683205570",
         "title": "LOVE IS IN THE AIR BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "Crispy Carrie is crunchy caramel, flaky salt and premium milk chocolate. Salty Fred are salted, roasted almonds with premium dark chocolate. Mocca Molly are crunchy coffee beans with premium dark chocolate.Pink Polly is raspberry and Persian liqorice with premium white chocolate.Persian Perry is Persian liqorice with premium white chocolate.Crunchy Coco is crunchy coconut with premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_LoveIsInTheAir_400x.png?v=1683205570",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "43"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_SharingIsCaring_400x.png?v=1683205692",
         "title": "SHARING IS CARING BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "Christmas is the time for hostess gifts and this box with gold writing on a lid as blue as the clearest winter night sky is a sure winner.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_SharingIsCaring_400x.png?v=1683205692",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "42"
     },
     {
-        "img": "https://simplychocolatecph.com/cdn/shop/files/Box_12_SunOfANutcracker_400x.png?v=1688543108",
         "title": "SON OF A NUTCRACKER BOX WITH 12 PCS.",
-        "price": " 1050",
+        "price": 1050,
+        "description": "Crispy Carrie is crunchy caramel, flaky salt and premium milk chocolate. Salty Fred are salted, roasted almonds with premium dark chocolate. Mocca Molly are crunchy coffee beans with premium dark chocolate.Pink Polly is raspberry and Persian liqorice with premium white chocolate.Persian Perry is Persian liqorice with premium white chocolate.Crunchy Coco is crunchy coconut with premium milk chocolate.",
+        "discountPercentage": 25,
+        "stock": 100,
+        "brand": "Amazon",
         "category": "giftbox",
+        "thumbnail": "https://simplychocolatecph.com/cdn/shop/files/Box_12_SunOfANutcracker_400x.png?v=1688543108",
+        "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+        ],
         "bestseller": "1"
     }
 ]

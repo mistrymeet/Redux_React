@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.text {
+    font-family: 'Cormorant Garamond', serif !important;
+}
+
 .offer-attach {
-    background-image: url('/Images/proinhero.jpg');
+    background-image: url('/Images/img9.jpg');
     background-position: center;
     background-size: cover;
     height: 550px;

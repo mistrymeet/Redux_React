@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 function Profile() {
   const AuthData = useSelector((state) => {
-    return state?.AUTH?.user?.email;
+    return state?.authReducer?.user?.email;
   });
 
   const dispatch = useDispatch();

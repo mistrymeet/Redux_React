@@ -21,7 +21,7 @@ function Dashboard() {
             <h1>Dashboard</h1>
             <hr />
           </div>
-          <div className="flex justify-center items-center gap-10">
+          <div className="flex justify-center items-center gap-10 flex-wrap">
             <NavLink to={"products"}>
               <Card
                 className="my-2"

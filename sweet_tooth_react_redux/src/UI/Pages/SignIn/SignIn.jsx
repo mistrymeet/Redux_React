@@ -6,7 +6,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "./SignIn.css";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { MAIN_URL } from "../../../Configue";
+import { BE_URL } from "../../../Configue";
 
 function SignIn() {
   let [userdata, setUserData] = useState({
@@ -19,9 +19,8 @@ function SignIn() {
   let navigate = useNavigate();
 
   function addData() {
-    console.log("userdata", userdata);
     axios
-      .post(`${MAIN_URL}user/signin`, userdata)
+      .post(`${BE_URL}user/signin`, userdata)
       .then((resData) => {
         toast.success("login successfully");
         dispatch(login(resData?.data));
@@ -30,7 +29,6 @@ function SignIn() {
         } else navigate("/");
       })
       .catch((err) => {
-        console.log("err", err);
         toast.error(err?.message);
       });
   }
@@ -53,7 +51,7 @@ function SignIn() {
                 onChange={(e) =>
                   setUserData({ ...userdata, email: e?.target?.value })
                 }
-                value={userdata?.email}
+                autocomplete="email"
               />
               <Label for="exampleEmail">Email</Label>
             </FormGroup>{" "}
@@ -66,7 +64,7 @@ function SignIn() {
                 onChange={(e) =>
                   setUserData({ ...userdata, password: e?.target?.value })
                 }
-                value={userdata?.password}
+                autocomplete="current-password"
               />
               <Label for="examplePassword">Password</Label>
             </FormGroup>{" "}

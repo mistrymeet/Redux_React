@@ -12,7 +12,11 @@ function CardCom({ data }) {
         className="card overflow-hidden"
       >
         <div className="overflow-hidden">
-          <img alt="Sample" src={data?.img} className="cardimg bg-gray-200" />
+          <img
+            alt="Sample"
+            src={data?.thumbnail}
+            className="cardimg bg-gray-200"
+          />
         </div>
         <CardBody className="overflow-hidden">
           <CardTitle tag="h6">{data?.title}</CardTitle>

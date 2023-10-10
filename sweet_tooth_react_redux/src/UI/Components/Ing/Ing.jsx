@@ -29,8 +29,8 @@ function Ing() {
   return (
     <>
       <div className="pt-16">
-        <div className="text-center font-mono uppercase font-medium pb-6">
-          <h1 className="font-semibold text-amber-800 drop-shadow-md">
+        <div className="text-center font-mono capitalize font-medium pb-6">
+          <h1 className="text-6xl drop-shadow-sm text">
             An epitome of Chocolate Experience
           </h1>
         </div>

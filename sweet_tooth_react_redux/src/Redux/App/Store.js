@@ -4,7 +4,7 @@ import productReducer from "../Features/ProductSlice/ProSlice";
 
 export const authStore = configureStore({
   reducer: {
-    AUTH: authReducer,
+    authReducer,
     productReducer,
   },
 });

@@ -14,17 +14,19 @@ import {
 } from "reactstrap";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
+import { useDispatch } from "react-redux";
+import { addProduct } from "../../../../Redux/Features/ProductSlice/ProSlice";
 
 function ProductForm({ toggle, modal }) {
-  // let [category, setCategory] = useState([]);
   let [productdata, setProductData] = useState({
     title: String,
     description: String,
-    // gender: String,
+    gender: String,
     price: Number,
     thumbnail: String,
     discountPercentage: Number,
     category: [],
+    color: [],
     availableStock: Number,
   });
 
@@ -34,10 +36,27 @@ function ProductForm({ toggle, modal }) {
     { value: "protine", label: "Protine Bars" },
     { value: "gift", label: "Gift Combos" },
   ];
+  const colorOptions = [
+    { value: "dark", label: "Dark" },
+    { value: "light", label: "Light" },
+  ];
   const animatedComponents = makeAnimated();
+  const dispatch = useDispatch();
 
   const addData = () => {
-    console.log(productdata);
+    dispatch(addProduct(productdata));
+    setProductData({
+      title: "",
+      description: "",
+      gender: "",
+      price: "",
+      thumbnail: "",
+      discountPercentage: "",
+      category: [],
+      color: [],
+      availableStock: "",
+    });
+    // console.log(productdata);
   };
 
   // const addSelectData = (e) => {
@@ -60,6 +79,7 @@ function ProductForm({ toggle, modal }) {
                       name="title"
                       placeholder="Enter Title"
                       type="text"
+                      value={productdata?.title}
                       onChange={(e) =>
                         setProductData({
                           ...productdata,
@@ -70,28 +90,76 @@ function ProductForm({ toggle, modal }) {
                   </FormGroup>
                 </Col>
               </Row>
-              <FormGroup>
-                <Label for="exampleAddress">Description</Label>
-                <Input
-                  id="exampleDescription"
-                  name="description"
-                  placeholder="Enter Description"
-                  onChange={(e) =>
-                    setProductData({
-                      ...productdata,
-                      description: e?.target?.value,
-                    })
-                  }
-                />
-              </FormGroup>
-              {/* <FormGroup>
-                <Label for="exampleAddress2">Gender</Label>
-                <Input
-                  id="exampleAddress2"
-                  name="address2"
-                  placeholder="Apartment, studio, or floor"
-                />
-              </FormGroup> */}
+              <Row>
+                <Col>
+                  <FormGroup>
+                    <Label for="exampleAddress">Description</Label>
+                    <Input
+                      id="exampleDescription"
+                      name="description"
+                      placeholder="Enter Description"
+                      value={productdata?.description}
+                      onChange={(e) =>
+                        setProductData({
+                          ...productdata,
+                          description: e?.target?.value,
+                        })
+                      }
+                    />
+                  </FormGroup>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={7}>
+                  <FormGroup>
+                    <Label for="exampleAddress2">Gender</Label>
+                    <Row>
+                      <Col>
+                        <FormGroup className="flex gap-1">
+                          <Label for="male">Male</Label>
+                          <Input
+                            id="male"
+                            checked={productdata?.gender === "male"}
+                            type="radio"
+                            onChange={() =>
+                              setProductData({ ...productdata, gender: "male" })
+                            }
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col>
+                        <FormGroup className="flex gap-1">
+                          <Label for="female">Female</Label>
+                          <Input
+                            id="female"
+                            checked={productdata.gender === "female"}
+                            type="radio"
+                            onChange={() =>
+                              setProductData({
+                                ...productdata,
+                                gender: "female",
+                              })
+                            }
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col>
+                        <FormGroup className="flex gap-1">
+                          <Label for="kids">Kids</Label>
+                          <Input
+                            id="kids"
+                            checked={productdata.gender === "kids"}
+                            type="radio"
+                            onChange={() =>
+                              setProductData({ ...productdata, gender: "kids" })
+                            }
+                          />
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                  </FormGroup>
+                </Col>
+              </Row>
               <Row>
                 <Col md={6}>
                   <FormGroup>
@@ -100,6 +168,7 @@ function ProductForm({ toggle, modal }) {
                       id="examplePrice"
                       name="price"
                       placeholder="Enter Price"
+                      value={productdata?.price}
                       onChange={(e) =>
                         setProductData({
                           ...productdata,
@@ -117,6 +186,7 @@ function ProductForm({ toggle, modal }) {
                     <Input
                       id="exampleDiscountedPercentage"
                       name="discountedPercentage"
+                      value={productdata?.discountPercentage}
                       onChange={(e) =>
                         setProductData({
                           ...productdata,
@@ -135,6 +205,7 @@ function ProductForm({ toggle, modal }) {
                     <Input
                       id="exampleThumbnail"
                       name="thumbnail"
+                      value={productdata?.thumbnail}
                       onChange={(e) =>
                         setProductData({
                           ...productdata,
@@ -151,6 +222,7 @@ function ProductForm({ toggle, modal }) {
                     <Input
                       id="exampleAvailbleStock"
                       name="svailbleStock"
+                      value={productdata?.availableStock}
                       onChange={(e) =>
                         setProductData({
                           ...productdata,
@@ -175,6 +247,23 @@ function ProductForm({ toggle, modal }) {
                         setProductData({
                           ...productdata,
                           category: e.map((e) => e.value),
+                        })
+                      }
+                    />
+                  </FormGroup>
+                </Col>
+                <Col>
+                  <FormGroup>
+                    <Label>Select Color</Label>
+                    <Select
+                      options={colorOptions}
+                      isMulti
+                      components={animatedComponents}
+                      placeholder={"Select Color"}
+                      onChange={(e) =>
+                        setProductData({
+                          ...productdata,
+                          color: e?.map((e) => e.value),
                         })
                       }
                     />

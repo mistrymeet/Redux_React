@@ -5,7 +5,6 @@ import BarsPage from "../UI/Pages/Bars/BarsPage";
 import BitesPage from "../UI/Pages/Bites/BitesPage";
 import ProtinePage from "../UI/Pages/Protine/ProtinePage";
 import GiftBoxesPage from "../UI/Pages/GiftBoxes/GiftBoxesPage";
-import BarKits from "../UI/Pages/BarKits/BarKits";
 import Cart from "../UI/Pages/Cart/Cart";
 import SignIn from "../UI/Pages/SignIn/SignIn";
 import Profile from "../UI/Pages/Profile/Profile";
@@ -21,6 +20,9 @@ import FooterCom from "../UI/Components/FooterCom/FooterCom";
 import DiscoverCom from "../UI/Components/DiscoverCom/DiscoverCom";
 import ModelCom from "../UI/Components/ModelCom/ModelCom";
 import CategoryCom from "../UI/Components/CategoryCom/CategoryCom";
+import Analytics from "../UI/Pages/Admin/Analytics/Analytics";
+import About from "../UI/Pages/About/About";
+import Contact from "../UI/Pages/Contact/Contact";
 
 function RouterCom() {
   let [textsearch, setTextSearch] = useState("");
@@ -47,10 +49,8 @@ function RouterCom() {
               path="/gift"
               element={<GiftBoxesPage textsearch={textsearch} />}
             />
-            <Route
-              path="/barkits"
-              element={<BarKits textsearch={textsearch} />}
-            />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<Signup />} />
@@ -58,6 +58,7 @@ function RouterCom() {
               <Route path="products" element={<Products />} />
               <Route path="users" element={<Users />} />
               <Route path="orders" element={<Orders />} />
+              <Route path="analytics" element={<Analytics />} />
             </Route>
             <Route path="/profile" element={<Profile />} />
             <Route path="/discover" element={<DiscoverCom />} />

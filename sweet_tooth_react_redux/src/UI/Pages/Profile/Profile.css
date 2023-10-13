@@ -1,0 +1,7 @@
+.pro {
+    background-image: url('/Images/su5.jpg');
+    background-position: top;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-attachment: fixed;
+}

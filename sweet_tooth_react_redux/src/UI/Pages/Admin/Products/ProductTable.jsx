@@ -4,9 +4,12 @@ import { toast } from "react-toastify";
 import { Button, Table } from "reactstrap";
 import { TiDeleteOutline } from "react-icons/ti";
 import { MdOutlineEdit } from "react-icons/md";
-import { deleteProduct } from "../../../../Redux/Features/ProductSlice/ProSlice";
+import {
+  addProduct,
+  deleteProduct,
+} from "../../../../Redux/Features/ProductSlice/ProSlice";
 
-function ProductTable() {
+function ProductTable({ setProductData }) {
   const { product, err } = useSelector((state) => {
     return state?.productReducer;
   });
@@ -14,6 +17,10 @@ function ProductTable() {
 
   const deleteHandler = (data, index) => {
     dispatch(deleteProduct({ id: data?._id, index }));
+  };
+
+  const updateHandler = (id, index) => {
+    dispatch();
   };
 
   if (err.length > 0) {
@@ -54,7 +61,7 @@ function ProductTable() {
                     <Button color="danger" onClick={() => deleteHandler(e, i)}>
                       <TiDeleteOutline className="text-xl" />
                     </Button>
-                    <Button color="info">
+                    <Button color="info" onClick={() => updateHandler(e, i)}>
                       <MdOutlineEdit className="text-xl" />
                     </Button>
                   </div>

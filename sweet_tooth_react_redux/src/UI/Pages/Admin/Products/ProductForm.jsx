@@ -32,14 +32,20 @@ function ProductForm({ toggle, modal }) {
 
   const options = [
     { value: "bars", label: "Chocolate Bars" },
-    { value: "bites", label: "Chocolate Bites" },
+    { value: "bits", label: "Chocolate Bites" },
     { value: "protine", label: "Protine Bars" },
     { value: "gift", label: "Gift Combos" },
+    { value: "barkits", label: "BarKits" },
   ];
   const colorOptions = [
     { value: "dark", label: "Dark" },
     { value: "light", label: "Light" },
   ];
+  // const quantityOptions = [
+  //   { value: "single", label: "Single-200g" },
+  //   { value: "sharing", label: "Twin-400g" },
+  //   { value: "combo", label: "Combo-2400g" },
+  // ];
   const animatedComponents = makeAnimated();
   const dispatch = useDispatch();
 

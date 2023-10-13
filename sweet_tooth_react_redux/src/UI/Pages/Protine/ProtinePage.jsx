@@ -2,17 +2,29 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import Product from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
+import axios from "axios";
+import { BE_URL } from "../../../Configue";
+import { toast } from "react-toastify";
 
 function ProtinePage({ textsearch }) {
   let [data, setData] = useState([]);
+
   useEffect(() => {
-    let filterData = Product?.filter?.((e) => {
-      return (
-        e?.category === "protine" &&
-        e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
-      );
-    });
-    setData(filterData);
+    axios({
+      method: "get",
+      url: `${BE_URL}product/getAll`,
+    })
+      .then((resData) => {
+        let newData = resData?.data?.data;
+        let filterData = newData?.filter?.((e) => {
+          return (
+            e?.category?.some?.((e) => e === "protine") &&
+            e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
+          );
+        });
+        setData(filterData);
+      })
+      .catch((err) => toast.error(err?.message));
   }, [textsearch]);
   return (
     <>

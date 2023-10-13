@@ -3,18 +3,33 @@ import { Container } from "reactstrap";
 import Products from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
 import "./Bars.css";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
+import axios from "axios";
+import { BE_URL } from "../../../Configue";
+import { toast } from "react-toastify";
 
 function BarsPage({ textsearch }) {
-  let [prodata, setProData] = useState([]);
+  let [productdata, setProductData] = useState([]);
+
   useEffect(() => {
-    let filterdata = Products?.filter?.((e) => {
-      return (
-        e?.category === "bars" &&
-        e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
-      );
-    });
-    setProData(filterdata);
+    axios({
+      method: "get",
+      url: `${BE_URL}product/getAll`,
+    })
+      .then((resData) => {
+        let newData = resData?.data?.data;
+        let filterData = newData?.filter?.((e) => {
+          return (
+            e?.category?.some?.((e) => e === "bars") &&
+            e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
+          );
+        });
+        setProductData(filterData);
+      })
+      .catch((err) => toast.error(err?.message));
   }, [textsearch]);
+
   return (
     <>
       <div className="bars">
@@ -30,8 +45,13 @@ function BarsPage({ textsearch }) {
               from licorice and caramel to marzipan and mint.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* <div className="flex flex-wrap justify-center gap-3">
             {prodata?.map?.((e, i) => {
+              return <CardCom key={i} data={e} />;
+            })}
+          </div> */}
+          <div className="flex flex-wrap justify-center gap-3">
+            {productdata?.map?.((e, i) => {
               return <CardCom key={i} data={e} />;
             })}
           </div>

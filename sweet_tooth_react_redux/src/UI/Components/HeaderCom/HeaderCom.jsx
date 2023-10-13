@@ -64,6 +64,9 @@ function HeaderCom({ setTextSearch }) {
                 <NavItem>
                   <NavLink to={"/dashboard/orders"}>Orders</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink to={"/dashboard/analytics"}>Analytics</NavLink>
+                </NavItem>
               </>
             ) : (
               <>
@@ -80,7 +83,10 @@ function HeaderCom({ setTextSearch }) {
                   <NavLink to={"/gift"}>Gift Boxes</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to={"barkits"}>Bar Kits</NavLink>
+                  <NavLink to={"/about"}>About</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to={"/contact"}>Contact</NavLink>
                 </NavItem>
               </>
             )}

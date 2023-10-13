@@ -2,18 +2,31 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import Product from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
+import axios from "axios";
+import { BE_URL } from "../../../Configue";
+import { toast } from "react-toastify";
 
 function GiftBoxesPage({ textsearch }) {
   let [data, setData] = useState([]);
+
   useEffect(() => {
-    let filterdata = Product?.filter?.((e) => {
-      return (
-        e?.category === "giftbox" &&
-        e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
-      );
-    });
-    setData(filterdata);
+    axios({
+      method: "get",
+      url: `${BE_URL}product/getAll`,
+    })
+      .then((resData) => {
+        let newData = resData?.data?.data;
+        let filterData = newData?.filter?.((e) => {
+          return (
+            e?.category?.some?.((e) => e === "giftbox") &&
+            e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
+          );
+        });
+        setData(filterData);
+      })
+      .catch((err) => toast.error(err?.message));
   }, [textsearch]);
+
   return (
     <>
       <Container className=" py-24 text-center drop-shadow-md">

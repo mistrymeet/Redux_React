@@ -28,7 +28,7 @@ function Products() {
         </div>
         <hr />
         <ProductForm modal={modal} toggle={toggle} />
-        <ProductTable />
+        <ProductTable setProductData={setProductData} />
       </Container>
     </>
   );

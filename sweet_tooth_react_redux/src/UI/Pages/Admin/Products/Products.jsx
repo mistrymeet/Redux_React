@@ -9,6 +9,7 @@ import { useState } from "react";
 function Products() {
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
+  let [productdata, setProductData] = useState({});
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -27,8 +28,13 @@ function Products() {
           </div>
         </div>
         <hr />
-        <ProductForm modal={modal} toggle={toggle} />
-        <ProductTable setProductData={setProductData} />
+        <ProductForm
+          productdata={productdata}
+          setProductData={setProductData}
+          modal={modal}
+          toggle={toggle}
+        />
+        <ProductTable setProductData={setProductData} toggle={toggle} />
       </Container>
     </>
   );

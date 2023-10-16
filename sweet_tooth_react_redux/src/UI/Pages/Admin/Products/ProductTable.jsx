@@ -9,18 +9,20 @@ import {
   deleteProduct,
 } from "../../../../Redux/Features/ProductSlice/ProSlice";
 
-function ProductTable({ setProductData }) {
+function ProductTable({ setProductData, toggle }) {
   const { product, err } = useSelector((state) => {
     return state?.productReducer;
   });
+
   const dispatch = useDispatch();
 
   const deleteHandler = (data, index) => {
     dispatch(deleteProduct({ id: data?._id, index }));
   };
 
-  const updateHandler = (id, index) => {
-    dispatch();
+  const updateHandler = (data, index) => {
+    setProductData(data);
+    toggle();
   };
 
   if (err.length > 0) {

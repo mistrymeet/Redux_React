@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -15,7 +15,8 @@ import { GiShoppingCart } from "react-icons/gi";
 import { LuUserCircle } from "react-icons/lu";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { searchData } from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,16 @@ function HeaderCom({ setTextSearch }) {
   const adminAuth = useSelector((state) => {
     return state?.authReducer?.user?.userType === "admin";
   });
+
+  const dispatch = useDispatch();
+
+  const serchHandler = (e) => {
+    dispatch(searchData(e?.target?.value));
+  };
+
+  useEffect(() => {
+    dispatch;
+  }, [searchData]);
 
   return (
     <div>
@@ -99,7 +110,7 @@ function HeaderCom({ setTextSearch }) {
               <InputGroup>
                 <Input
                   placeholder="search here"
-                  onChange={(e) => setTextSearch(e?.target?.value)}
+                  onChange={(e) => serchHandler(e)}
                 />
                 <InputGroupText className="bg-black text-white">
                   <CgSearch />

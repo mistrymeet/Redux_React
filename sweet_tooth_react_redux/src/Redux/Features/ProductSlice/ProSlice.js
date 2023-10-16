@@ -18,13 +18,21 @@ export const fetchData = createAsyncThunk("product/fetchData", () => {
 export const deleteProduct = createAsyncThunk(
   "product/deleteProduct",
   ({ id, index }) => {
-    console.log("🚀 ~ file: ProSlice.js:20 ~  id, index:", { id, index });
     return axios.delete(`${BE_URL}product/delete/${id}`).then((resData) => {
       return index;
       // console.log("res", resData);
     });
   }
 );
+
+// export const updateProduct = createAsyncThunk("product/updateProduct", (id) => {
+//   return axios({
+//     method: "put",
+//     url: `${BE_URL}product/update/${id}`,
+//   }).then((resData) => {
+//     return resData?.data;
+//   });
+// });
 
 export const addProduct = createAsyncThunk(
   "product/addProduct",

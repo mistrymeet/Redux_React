@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   Modal,
@@ -17,35 +17,32 @@ import makeAnimated from "react-select/animated";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../../../Redux/Features/ProductSlice/ProSlice";
 
-function ProductForm({ toggle, modal }) {
-  let [productdata, setProductData] = useState({
-    title: String,
-    description: String,
-    gender: String,
-    price: Number,
-    thumbnail: String,
-    discountPercentage: Number,
+function ProductForm({ toggle, modal, setProductData, productdata }) {
+  let [formProductdata, setFormProductData] = useState({
+    title: "",
+    description: "",
+    gender: "",
+    price: "",
+    thumbnail: "",
+    discountPercentage: "",
     category: [],
     color: [],
-    availableStock: Number,
+    availableStock: "",
   });
-
+  useEffect(() => {
+    setFormProductData(productdata);
+  }, [productdata]);
   const options = [
     { value: "bars", label: "Chocolate Bars" },
     { value: "bits", label: "Chocolate Bites" },
     { value: "protine", label: "Protine Bars" },
     { value: "gift", label: "Gift Combos" },
-    { value: "barkits", label: "BarKits" },
   ];
   const colorOptions = [
     { value: "dark", label: "Dark" },
     { value: "light", label: "Light" },
   ];
-  // const quantityOptions = [
-  //   { value: "single", label: "Single-200g" },
-  //   { value: "sharing", label: "Twin-400g" },
-  //   { value: "combo", label: "Combo-2400g" },
-  // ];
+
   const animatedComponents = makeAnimated();
   const dispatch = useDispatch();
 
@@ -62,11 +59,14 @@ function ProductForm({ toggle, modal }) {
       color: [],
       availableStock: "",
     });
-    // console.log(productdata);
   };
 
   // const addSelectData = (e) => {
   //   setCategory(e?.map((e) => e.value));
+  // };
+
+  // const updateData = () => {
+  //   dispatch(updateProduct(productdata?._id));
   // };
 
   return (
@@ -279,6 +279,9 @@ function ProductForm({ toggle, modal }) {
               <div className="mt-3 flex justify-center">
                 <Button color="success" onClick={() => addData()}>
                   Submit
+                </Button>
+                <Button color="success" onClick={() => updateData()}>
+                  Update
                 </Button>
               </div>
             </Form>

@@ -4,28 +4,35 @@ import CardCom from "../../Components/CardCom/CardCom";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
+import { useNavigate } from "react-router-dom";
 
 function BitesPage({ textsearch }) {
   let [data, setData] = useState([]);
+  let dispatch = useDispatch();
+  let navigate = useNavigate();
 
   useEffect(() => {
-    axios({
-      method: "get",
-      url: `${BE_URL}product/getAll`,
-    })
-      .then((resData) => {
-        let newData = resData?.data?.data;
+    dispatch(fetchData());
+  }, []);
 
-        let filterData = newData?.filter?.((e) => {
-          return (
-            e?.category?.some((e) => e === "bits") &&
-            e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
-          );
-        });
-        setData(filterData);
-      })
-      .catch((err) => toast.error(err?.message));
-  }, [textsearch]);
+  const { product, err } = useSelector((state) => {
+    return state.productReducer;
+  });
+
+  useEffect(() => {
+    let newdata = product?.filter?.((e) => {
+      return e?.category?.some?.((e) => e === "bits");
+    });
+    setData(newdata);
+  }, [product]);
+
+  let fetch = (id) => {
+    navigate(`/singleproduct/${id}`);
+    window.scroll(0, 0);
+  };
+
   return (
     <>
       <Container className="py-24 text-center drop-shadow-md">
@@ -48,7 +55,7 @@ function BitesPage({ textsearch }) {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {data?.map?.((e, i) => {
-              return <CardCom key={i} data={e} />;
+              return <CardCom key={i} data={e} onclick={fetch} />;
             })}
           </div>
         </div>

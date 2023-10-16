@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import "./CardCom.css";
 
-function CardCom({ data }) {
+function CardCom({ data, onclick }) {
   return (
     <>
       <Card
@@ -10,6 +10,8 @@ function CardCom({ data }) {
           width: "18rem",
         }}
         className="card overflow-hidden"
+        role="button"
+        onClick={() => onclick(data._id)}
       >
         <div className="overflow-hidden">
           <img

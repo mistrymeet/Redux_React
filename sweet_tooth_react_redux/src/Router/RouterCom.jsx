@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../UI/Pages/Home/HomePage";
 import BarsPage from "../UI/Pages/Bars/BarsPage";
@@ -23,9 +23,11 @@ import CategoryCom from "../UI/Components/CategoryCom/CategoryCom";
 import Analytics from "../UI/Pages/Admin/Analytics/Analytics";
 import About from "../UI/Pages/About/About";
 import Contact from "../UI/Pages/Contact/Contact";
+import SingleProduct from "../UI/Pages/SingleProduct/SingleProduct";
 
 function RouterCom() {
   let [textsearch, setTextSearch] = useState("");
+
   return (
     <>
       <Provider store={authStore}>
@@ -64,6 +66,7 @@ function RouterCom() {
             <Route path="/discover" element={<DiscoverCom />} />
             <Route path="/model" element={<ModelCom />} />
             <Route path="/category" element={<CategoryCom />} />
+            <Route path="/singleproduct/:id" element={<SingleProduct />} />
           </Routes>
           <FooterCom />
         </BrowserRouter>

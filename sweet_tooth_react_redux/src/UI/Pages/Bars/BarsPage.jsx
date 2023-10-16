@@ -8,28 +8,39 @@ import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import {
+  searchData,
+  searchbar,
+} from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function BarsPage({ textsearch }) {
   let [productdata, setProductData] = useState([]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchData());
+  }, []);
+  const { product, err } = useSelector((state) => {
+    return state?.productReducer;
+  });
 
   useEffect(() => {
-    axios({
-      method: "get",
-      url: `${BE_URL}product/getAll`,
-    })
-      .then((resData) => {
-        let newData = resData?.data?.data;
-        let filterData = newData?.filter?.((e) => {
-          return (
-            e?.category?.some?.((e) => e === "bars") &&
-            e?.title?.toLowerCase?.()?.includes?.(textsearch?.toLowerCase?.())
-          );
-        });
-        setProductData(filterData);
-      })
-      .catch((err) => toast.error(err?.message));
-  }, [textsearch]);
+    let data = product?.filter?.((e) => {
+      return e?.category?.some?.((e) => e === "bars");
+    });
+    setProductData(data);
+  }, [product]);
 
+  useEffect(() => {
+    dispatch(searchbar(product));
+  }, [searchData]);
+
+  let navigate = useNavigate();
+
+  const reDirect = (id) => {
+    navigate(`/singleproduct/${id}`);
+    window.scroll(0, 0);
+  };
   return (
     <>
       <div className="bars">
@@ -52,7 +63,7 @@ function BarsPage({ textsearch }) {
           </div> */}
           <div className="flex flex-wrap justify-center gap-3">
             {productdata?.map?.((e, i) => {
-              return <CardCom key={i} data={e} />;
+              return <CardCom key={i} data={e} onclick={reDirect} />;
             })}
           </div>
         </Container>

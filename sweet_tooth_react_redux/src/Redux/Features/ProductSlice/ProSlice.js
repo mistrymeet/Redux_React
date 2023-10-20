@@ -41,7 +41,6 @@ export const addProduct = createAsyncThunk(
       .post(`${BE_URL}product/create`, productdata, {
         headers: {
           "Content-Type": "application/json",
-
           authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
         },
       })

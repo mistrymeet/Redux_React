@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   search: "",
-  searchbar: [],
+  searchArr: [],
 };
 
 const searchSlice = createSlice({
@@ -10,14 +10,16 @@ const searchSlice = createSlice({
   initialState,
   reducers: {
     searchData: (state, { payload }) => {
+      // console.log("🚀 ~ file: SearchSlice.js:13 ~ payload:", payload);
       state.search = payload;
     },
     searchbar: (state, { payload }) => {
-      let mainData = state?.search;
       let filterData = payload?.filter?.((e) => {
-        return e?.title?.toLowerCase?.()?.includes?.(mainData?.toLowerCase?.());
+        return e?.title
+          ?.toLowerCase?.()
+          ?.includes?.(state.search?.toLowerCase?.());
       });
-      state.searchbar = filterData;
+      state.searchArr = filterData;
     },
   },
 });

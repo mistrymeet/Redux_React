@@ -3,6 +3,8 @@ import "./About.css";
 import { Col, Container, Row } from "reactstrap";
 
 function About() {
+  window.scroll(0, 0);
+
   return (
     <>
       <div className="about-hero">

@@ -16,6 +16,7 @@ function ProtinePage({ textsearch }) {
 
   useEffect(() => {
     dispatch(fetchData());
+    window.scroll(0, 0);
   }, []);
 
   let { product, err } = useSelector((state) => state?.productReducer);

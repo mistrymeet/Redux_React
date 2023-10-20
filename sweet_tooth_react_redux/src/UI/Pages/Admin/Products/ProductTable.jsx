@@ -44,7 +44,7 @@ function ProductTable({ setProductData, toggle }) {
         <tbody>
           {product?.map?.((e, i) => {
             return (
-              <tr key={e?.id}>
+              <tr key={e?._id}>
                 <th scope="row">{i + 1}</th>
                 <td>
                   <div className="grid place-content-center">

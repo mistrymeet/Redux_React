@@ -17,6 +17,7 @@ function GiftBoxesPage({ textsearch }) {
 
   useEffect(() => {
     dispatch(fetchData);
+    window.scroll(0, 0);
   }, []);
 
   useEffect(() => {

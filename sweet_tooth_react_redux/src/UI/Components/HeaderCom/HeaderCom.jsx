@@ -16,7 +16,10 @@ import { LuUserCircle } from "react-icons/lu";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { searchData } from "../../../Redux/Features/SearchSlice/SearchSlice";
+import {
+  searchData,
+  searchbar,
+} from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +40,7 @@ function HeaderCom({ setTextSearch }) {
     dispatch(searchData(e?.target?.value));
   };
 
-  useEffect(() => {
-    dispatch;
-  }, [searchData]);
+  const cart = useSelector((state) => state?.cartReducer?.cart);
 
   return (
     <div>
@@ -119,7 +120,15 @@ function HeaderCom({ setTextSearch }) {
             </div>
             <NavItem>
               <NavLink to={"/cart"}>
-                <GiShoppingCart />
+                <span className="relative">
+                  <GiShoppingCart />
+                  <span
+                    className="text-sm absolute text-black"
+                    style={{ top: "-8px", right: "-5px" }}
+                  >
+                    {cart?.length}
+                  </span>
+                </span>
               </NavLink>
             </NavItem>
             {JSON.stringify(auth) !== "{}" ? (

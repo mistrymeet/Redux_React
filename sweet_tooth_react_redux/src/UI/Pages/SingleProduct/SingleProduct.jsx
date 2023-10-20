@@ -8,6 +8,10 @@ import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
+import { data } from "autoprefixer";
+import { addCart } from "../../../Redux/Features/CartSlice/CartSlice";
 
 function SingleProduct() {
   let [displayimg, setDisplayImg] = useState(null);
@@ -16,8 +20,8 @@ function SingleProduct() {
   if (count < 0) {
     return SetCount(0);
   }
-
   let { id } = useParams();
+  let dispatch = useDispatch();
 
   useEffect(() => {
     axios({
@@ -27,8 +31,13 @@ function SingleProduct() {
       .then((resData) => {
         setProductData(resData?.data?.data);
       })
-      .then((err) => toast.error(err.message));
+      .catch((err) => toast.error(err));
+    window.scroll(0, 0);
   }, []);
+
+  const addToCart = () => {
+    dispatch(addCart(productData));
+  };
 
   return (
     <>
@@ -59,11 +68,39 @@ function SingleProduct() {
             <div className="right flex-1 items-start">
               <p className="text-4xl">{productData?.title}</p>
               <p className="font-medium">
-                MRP <del>₹ 5599</del>
+                <span>MRP</span>
+                <span>
+                  {productData?.discountPercentage === 0 || null ? (
+                    <>
+                      <span className="text-3xl ms-1">
+                        {productData?.price}
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <span
+                        style={{
+                          textDecoration: productData?.discountPercentage
+                            ? "line-through"
+                            : null,
+                        }}
+                        className="px-1"
+                      >
+                        {productData?.price}
+                      </span>
+                      <span className="text-3xl">
+                        {productData?.price -
+                          (productData?.price *
+                            productData?.discountPercentage) /
+                            100}
+                      </span>
+                    </>
+                  )}
+                </span>
               </p>
-              <p className="text-fuchsia-800 text-base font-medium">
+              {/* <p className="text-fuchsia-800 text-base font-medium">
                 Deal of the Day :
-              </p>
+              </p> */}
 
               <p className="text-justify">{productData?.description}</p>
 
@@ -103,7 +140,11 @@ function SingleProduct() {
                   <AiOutlinePlusCircle className="text-lg cursor-pointer" />
                 </Button>
               </div>
-              <Button className="uppercase mt-6" color="success">
+              <Button
+                className="uppercase mt-6"
+                color="success"
+                onClick={() => addToCart()}
+              >
                 Add to Cart
               </Button>
             </div>

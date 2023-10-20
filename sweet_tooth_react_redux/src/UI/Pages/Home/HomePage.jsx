@@ -9,6 +9,7 @@ import CategoryCom from "../../Components/CategoryCom/CategoryCom";
 const { Content } = Layout;
 
 const HomePage = () => {
+  window.scroll(0, 0);
   return (
     <>
       <Layout className="bg-white">

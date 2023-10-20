@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import Products from "../../../Utils/Product.json";
 import CardCom from "../../Components/CardCom/CardCom";
 import "./Bars.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
-import axios from "axios";
-import { BE_URL } from "../../../Configue";
-import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import {
   searchData,
@@ -19,6 +15,7 @@ function BarsPage({ textsearch }) {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());
+    window.scroll(0, 0);
   }, []);
   const { product, err } = useSelector((state) => {
     return state?.productReducer;
@@ -31,15 +28,10 @@ function BarsPage({ textsearch }) {
     setProductData(data);
   }, [product]);
 
-  useEffect(() => {
-    dispatch(searchbar(product));
-  }, [searchData]);
-
   let navigate = useNavigate();
 
   const reDirect = (id) => {
     navigate(`/singleproduct/${id}`);
-    window.scroll(0, 0);
   };
   return (
     <>

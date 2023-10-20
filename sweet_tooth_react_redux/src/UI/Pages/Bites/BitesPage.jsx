@@ -15,6 +15,7 @@ function BitesPage({ textsearch }) {
 
   useEffect(() => {
     dispatch(fetchData());
+    window.scroll(0, 0);
   }, []);
 
   const { product, err } = useSelector((state) => {
@@ -30,7 +31,6 @@ function BitesPage({ textsearch }) {
 
   let fetch = (id) => {
     navigate(`/singleproduct/${id}`);
-    window.scroll(0, 0);
   };
 
   return (

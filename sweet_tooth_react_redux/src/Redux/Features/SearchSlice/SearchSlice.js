@@ -14,12 +14,11 @@ const searchSlice = createSlice({
       state.search = payload;
     },
     searchbar: (state, { payload }) => {
-      let filterData = payload?.filter?.((e) => {
-        return e?.title
-          ?.toLowerCase?.()
-          ?.includes?.(state.search?.toLowerCase?.());
+      state.search = payload?.toLowerCase?.();
+      let data = payload?.filter?.((e) => {
+        return e?.title?.toLowerCase?.()?.includes?.(state.search);
       });
-      state.searchArr = filterData;
+      state.searchArr = data;
     },
   },
 });

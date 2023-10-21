@@ -1,0 +1,39 @@
+(1) What is Redux?
+Ans : Well, an application has its state, which can be a combination of the states of its internal components.
+
+        Let's take an e-commerce website for example. An e-commerce website will have several components like the cart component, user profile component, previously viewed section component, and so on.
+
+        We'll take the cart component which displays the number of items in a user's cart. The state of the cart component will consist of all the items the user has added to the cart and the total number of those items. At all times the application is up and running, this component has to show the updated number of items in the user's cart.
+
+        Whenever a user adds an item to the cart, the application has to internally handle that action by adding that item to the cart object. It has to maintain its state internally and also show the user the total number of items in the cart in the UI.
+
+        Similarly, removing an item from the cart should decrease the number of items in the cart internally. It should remove the item from the cart object and also display the updated total number of items in the cart in the UI.
+
+        We may very well maintain the internal state of the components inside them, but as and when an application grows bigger, it may have to share some state between components. This is not just only to show them in the view, but also to manage or update them or perform some logic based on their value.
+
+        This task of handling multiple states from multiple components efficiently can become challenging when the application grows in size.
+
+        This is where Redux comes into the picture. Being a state management library, Redux will basically store and manage all the application's states.
+
+        It also provides us with some important APIs using which we can make changes to the existing state as well as fetch the current state of the application.
+
+(2) What is Redux Thunk used for?
+Ans : “Redux Thunk middleware allows you to write action creators that return a function instead of an action.”
+
+        For me personally, it makes more sense to think of these thunk functions as services since they don’t return actions. Remember that actions are plain objects. Your thunk function will call dispatch, so you’ll be calling dispatch at least twice. Once from your component when you call your service. And then again inside of your thunk function to trigger your reducer.
+
+        Redux Thunk looks for these special functions and handles the dispatching for you. This pattern allows you to centralize and re-use these services in different components. This especially comes handy when you are making asynchronous API requests and you need to dispatch on promise success and error.
+
+(3) What is Pure Component? When to use Pure Component over Component?
+Ans : Based on the concept of purity in functional programming paradigms, a function is said to be pure if it meets the following two conditions:
+
+        Its return value is only determined by its input values
+        Its return value is always the same for the same input values
+        A React component is considered pure if it renders the same output for the same state and props. For this type of class component, React provides the PureComponent base class. Class components that extend the React.PureComponent class are treated as pure components.
+
+        Pure components have some performance improvements and render optimizations since React implements the shouldComponentUpdate() method for them with a shallow comparison for props and state.
+
+(4) What is the second argument that can optionally be passed tosetState and what is its purpose?
+Ans : The second argument that can optionally be passed to setState is a callback function which gets called immediately after the setState is completed and the components get re-rendered. 
+
+        If you want your program to update the value of a state using setState and then perform certain actions on the updated value of state then you must specify those actions in a function which should be the second argument of the setState. If we would not do so then those actions will be performed on the previous value of state because of asynchronous nature of setState.

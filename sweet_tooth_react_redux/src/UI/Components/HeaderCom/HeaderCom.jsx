@@ -23,6 +23,7 @@ import {
 
 function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [search, setSearch] = useState("");
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -36,9 +37,9 @@ function HeaderCom({ setTextSearch }) {
 
   const dispatch = useDispatch();
 
-  const serchHandler = (e) => {
-    dispatch(searchData(e?.target?.value));
-  };
+  useEffect(() => {
+    dispatch(searchData(search));
+  }, [search]);
 
   const cart = useSelector((state) => state?.cartReducer?.cart);
 
@@ -111,7 +112,7 @@ function HeaderCom({ setTextSearch }) {
               <InputGroup>
                 <Input
                   placeholder="search here"
-                  onChange={(e) => serchHandler(e)}
+                  onChange={(e) => setSearch(e?.target?.value)}
                 />
                 <InputGroupText className="bg-black text-white">
                   <CgSearch />

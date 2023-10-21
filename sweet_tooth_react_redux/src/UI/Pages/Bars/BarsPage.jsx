@@ -26,7 +26,8 @@ function BarsPage({ textsearch }) {
       return e?.category?.some?.((e) => e === "bars");
     });
     setProductData(data);
-  }, [product]);
+    dispatch(searchbar(data));
+  }, [product, searchData]);
 
   let navigate = useNavigate();
 

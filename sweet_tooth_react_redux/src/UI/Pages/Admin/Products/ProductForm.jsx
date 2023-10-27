@@ -15,7 +15,13 @@ import {
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 import { useDispatch } from "react-redux";
-import { addProduct } from "../../../../Redux/Features/ProductSlice/ProSlice";
+import {
+  addProduct,
+  updateProduct,
+} from "../../../../Redux/Features/ProductSlice/ProSlice";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { BE_URL } from "../../../../Configue";
 
 function ProductForm({ toggle, modal, setProductData, productdata }) {
   let [formProductdata, setFormProductData] = useState({
@@ -29,6 +35,7 @@ function ProductForm({ toggle, modal, setProductData, productdata }) {
     color: [],
     availableStock: "",
   });
+
   useEffect(() => {
     setFormProductData(productdata);
   }, [productdata]);
@@ -65,16 +72,30 @@ function ProductForm({ toggle, modal, setProductData, productdata }) {
   //   setCategory(e?.map((e) => e.value));
   // };
 
-  // const updateData = () => {
-  //   dispatch(updateProduct(productdata?._id));
-  // };
+  const updateData = () => {
+    axios({
+      method: "put",
+      url: `${BE_URL}product/update/${productdata?._id}`,
+      data: formProductdata,
+    })
+      .then((resData) => {
+        toggle();
+        dispatch(
+          updateProduct({
+            data: resData?.data?.data,
+            index: productdata?.index,
+          })
+        );
+      })
+      .catch((err) => toast.error(err.message));
+  };
 
   return (
     <div>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Add Product Info..</ModalHeader>
         <ModalBody>
-          <div className="bg-slate-300 p-6">
+          <div className="border-2 rounded-lg p-6">
             <Form>
               <Row>
                 <Col>
@@ -263,6 +284,10 @@ function ProductForm({ toggle, modal, setProductData, productdata }) {
                     <Label>Select Color</Label>
                     <Select
                       options={colorOptions}
+                      defaultValue={[
+                        { value: "bars", label: "Chocolate Bars" },
+                        { value: "bits", label: "Chocolate Bites" },
+                      ]}
                       isMulti
                       components={animatedComponents}
                       placeholder={"Select Color"}
@@ -276,13 +301,24 @@ function ProductForm({ toggle, modal, setProductData, productdata }) {
                   </FormGroup>
                 </Col>
               </Row>
-              <div className="mt-3 flex justify-center">
-                <Button color="success" onClick={() => addData()}>
-                  Submit
-                </Button>
-                <Button color="success" onClick={() => updateData()}>
-                  Update
-                </Button>
+              <div className="mt-3 flex justify-center w-full">
+                {productdata && JSON.stringify(productdata) === "{}" ? (
+                  <Button
+                    color="success"
+                    className="w-full"
+                    onClick={() => addData()}
+                  >
+                    Submit
+                  </Button>
+                ) : (
+                  <Button
+                    color="success"
+                    className="w-full"
+                    onClick={() => updateData()}
+                  >
+                    Update
+                  </Button>
+                )}
               </div>
             </Form>
           </div>

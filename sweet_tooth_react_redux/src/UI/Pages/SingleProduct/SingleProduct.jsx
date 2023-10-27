@@ -16,6 +16,7 @@ import { addCart } from "../../../Redux/Features/CartSlice/CartSlice";
 function SingleProduct() {
   let [displayimg, setDisplayImg] = useState(null);
   let [productData, setProductData] = useState({});
+
   let [count, SetCount] = useState(0);
   if (count < 0) {
     return SetCount(0);
@@ -36,7 +37,26 @@ function SingleProduct() {
   }, []);
 
   const addToCart = () => {
-    dispatch(addCart(productData));
+    axios({
+      method: "post",
+      url: `${BE_URL}cart/create`,
+      data: {
+        products: [
+          {
+            productId: productData?._id,
+            count,
+          },
+        ],
+      },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearar ${JSON.parse(localStorage.getItem("token"))}`,
+      },
+    })
+      .then((resData) => {
+        dispatch(addCart(resData?.data));
+      })
+      .catch((err) => toast.error(err?.message));
   };
 
   return (

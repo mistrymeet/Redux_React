@@ -16,10 +16,12 @@ import { LuUserCircle } from "react-icons/lu";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  searchData,
-  searchbar,
-} from "../../../Redux/Features/SearchSlice/SearchSlice";
+import { AiOutlineHeart } from "react-icons/ai";
+import axios from "axios";
+import { BE_URL } from "../../../Configue";
+import { getCart } from "../../../Redux/Features/CartSlice/CartSlice";
+import { toast } from "react-toastify";
+import { searchInput } from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,12 +38,26 @@ function HeaderCom({ setTextSearch }) {
   });
 
   const dispatch = useDispatch();
+  const cart = useSelector((state) => state?.cartReducer?.cart);
 
   useEffect(() => {
-    dispatch(searchData(search));
-  }, [search]);
+    axios({
+      method: "get",
+      url: `${BE_URL}cart/getAll`,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+      },
+    })
+      .then((resData) => {
+        dispatch(getCart(resData?.data?.data));
+      })
+      .catch((err) => toast.error(err?.message));
+  }, []);
 
-  const cart = useSelector((state) => state?.cartReducer?.cart);
+  useEffect(() => {
+    dispatch(searchInput(search));
+  }, [search]);
 
   return (
     <div>
@@ -119,6 +135,11 @@ function HeaderCom({ setTextSearch }) {
                 </InputGroupText>
               </InputGroup>
             </div>
+            <NavItem>
+              <NavLink to={"/wishlist"}>
+                <AiOutlineHeart />
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink to={"/cart"}>
                 <span className="relative">

@@ -24,6 +24,7 @@ import Analytics from "../UI/Pages/Admin/Analytics/Analytics";
 import About from "../UI/Pages/About/About";
 import Contact from "../UI/Pages/Contact/Contact";
 import SingleProduct from "../UI/Pages/SingleProduct/SingleProduct";
+import Wishlist from "../UI/Pages/Wishlist/Wishlist";
 
 function RouterCom() {
   let [textsearch, setTextSearch] = useState("");
@@ -67,6 +68,7 @@ function RouterCom() {
             <Route path="/model" element={<ModelCom />} />
             <Route path="/category" element={<CategoryCom />} />
             <Route path="/singleproduct/:id" element={<SingleProduct />} />
+            <Route path="/wishlist" element={<Wishlist />} />
           </Routes>
           <FooterCom />
         </BrowserRouter>

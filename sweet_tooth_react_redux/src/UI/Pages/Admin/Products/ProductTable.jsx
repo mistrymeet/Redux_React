@@ -21,7 +21,7 @@ function ProductTable({ setProductData, toggle }) {
   };
 
   const updateHandler = (data, index) => {
-    setProductData(data);
+    setProductData({ ...data, index: index });
     toggle();
   };
 

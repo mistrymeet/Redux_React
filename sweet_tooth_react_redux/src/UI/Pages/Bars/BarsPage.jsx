@@ -5,14 +5,13 @@ import "./Bars.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
 import { useNavigate } from "react-router-dom";
-import {
-  searchData,
-  searchbar,
-} from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function BarsPage({ textsearch }) {
   let [productdata, setProductData] = useState([]);
   const dispatch = useDispatch();
+  const { search } = useSelector((state) => state?.searchReducer);
+  console.log("🚀 ~ file: BarsPage.jsx:13 ~ BarsPage ~ search:", search);
+
   useEffect(() => {
     dispatch(fetchData());
     window.scroll(0, 0);
@@ -23,11 +22,13 @@ function BarsPage({ textsearch }) {
 
   useEffect(() => {
     let data = product?.filter?.((e) => {
-      return e?.category?.some?.((e) => e === "bars");
+      return (
+        e?.category?.some?.((e) => e === "bars") &&
+        e?.title?.toLowerCase?.()?.includes?.(search?.toLowerCase?.())
+      );
     });
     setProductData(data);
-    dispatch(searchbar(data));
-  }, [product, searchData]);
+  }, [product, search]);
 
   let navigate = useNavigate();
 

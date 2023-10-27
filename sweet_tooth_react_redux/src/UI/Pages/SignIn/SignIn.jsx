@@ -25,7 +25,7 @@ function SignIn() {
         toast.success("login successfully");
         dispatch(login(resData?.data));
         if (resData?.data?.data?.userType === "admin") {
-          navigate("/dashboard");
+          navigate("/dashboard/products");
         } else navigate("/");
       })
       .catch((err) => {

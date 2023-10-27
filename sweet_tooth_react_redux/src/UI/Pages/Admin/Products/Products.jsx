@@ -15,6 +15,10 @@ function Products() {
   useEffect(() => {
     dispatch(fetchData());
   }, []);
+  const addFun = () => {
+    toggle();
+    setProductData({});
+  };
 
   return (
     <>
@@ -22,7 +26,7 @@ function Products() {
         <hr />
         <div className="flex justify-end ">
           <div className="w-60">
-            <Button color="danger" className="w-full" onClick={toggle}>
+            <Button color="danger" className="w-full" onClick={addFun}>
               Add Product
             </Button>
           </div>

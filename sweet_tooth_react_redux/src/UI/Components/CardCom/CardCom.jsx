@@ -1,8 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
+import { Button, Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import "./CardCom.css";
+import { CgHeart } from "react-icons/cg";
+import { useDispatch } from "react-redux";
+import axios from "axios";
+import { BE_URL } from "../../../Configue";
+import { toast } from "react-toastify";
 
 function CardCom({ data, onclick }) {
+  const addWishList = () => {
+    axios({
+      method: "post",
+      url: `${BE_URL}wishlist/create`,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+      },
+      data: {
+        products: [data?._id],
+      },
+    })
+      .then((resData) => console.log(resData?.data?.data))
+      .catch((err) => toast.error(err?.message));
+  };
+
   return (
     <>
       <Card
@@ -25,6 +46,9 @@ function CardCom({ data, onclick }) {
           <CardSubtitle className="mb-2 text-muted" tag="h6">
             ₹ {data?.price}
           </CardSubtitle>
+          <Button className="w-20" color="danger" onClick={() => addWishList()}>
+            <CgHeart className="m-auto" />
+          </Button>
         </CardBody>
       </Card>
     </>

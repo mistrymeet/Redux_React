@@ -4,20 +4,33 @@ import { BE_URL } from "../../../Configue";
 
 const initialState = {
   cart: [],
-  count: "",
+  pro: [],
 };
+
+export const getAllCart = createAsyncThunk("cart/getAllCart", () => {
+  return axios({
+    method: "get",
+    url: `${BE_URL}cart/getAll`,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+    },
+  }).then((resData) => resData?.data?.data?.[0]?.products?.[0]);
+});
 
 const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
     addCart: (state, { payload }) => {
-      state.cart;
-    },
-    getCart: (state, { payload }) => {
-      // console.log("🚀 ~ file: CartSlice.js:19 ~ payload:", payload);
       state.cart.push(payload);
+      // state.cart;
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(getAllCart.fulfilled, (state, { payload }) => {
+      state.pro = payload;
+    });
   },
 });
 

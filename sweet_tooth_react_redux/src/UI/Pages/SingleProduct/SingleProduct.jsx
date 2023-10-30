@@ -11,7 +11,10 @@ import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { data } from "autoprefixer";
-import { addCart } from "../../../Redux/Features/CartSlice/CartSlice";
+import {
+  addCart,
+  getAllCart,
+} from "../../../Redux/Features/CartSlice/CartSlice";
 
 function SingleProduct() {
   let [displayimg, setDisplayImg] = useState(null);
@@ -50,14 +53,16 @@ function SingleProduct() {
       },
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearar ${JSON.parse(localStorage.getItem("token"))}`,
+        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
       },
     })
-      .then((resData) => {
-        dispatch(addCart(resData?.data));
-      })
+      .then((resData) => dispatch(addCart(resData?.data)))
       .catch((err) => toast.error(err?.message));
   };
+
+  useEffect(() => {
+    dispatch(getAllCart());
+  }, []);
 
   return (
     <>

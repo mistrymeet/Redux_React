@@ -19,8 +19,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineHeart } from "react-icons/ai";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
-import { getCart } from "../../../Redux/Features/CartSlice/CartSlice";
-import { toast } from "react-toastify";
+import {
+  getAllCart,
+  getCart,
+} from "../../../Redux/Features/CartSlice/CartSlice";
 import { searchInput } from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function HeaderCom({ setTextSearch }) {
@@ -38,21 +40,10 @@ function HeaderCom({ setTextSearch }) {
   });
 
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state?.cartReducer?.cart);
+  const { cart } = useSelector((state) => state?.cartReducer);
 
   useEffect(() => {
-    axios({
-      method: "get",
-      url: `${BE_URL}cart/getAll`,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
-      },
-    })
-      .then((resData) => {
-        dispatch(getCart(resData?.data?.data));
-      })
-      .catch((err) => toast.error(err?.message));
+    dispatch(getAllCart());
   }, []);
 
   useEffect(() => {

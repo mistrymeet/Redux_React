@@ -6,21 +6,23 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
+import { addWish } from "../../../Redux/Features/WishListSlice/WishListSlice";
 
 function CardCom({ data, onclick }) {
+  const dispatch = useDispatch();
   const addWishList = () => {
     axios({
       method: "post",
       url: `${BE_URL}wishlist/create`,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+        Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
       },
       data: {
-        products: [data?._id],
+        products: [{ ...data, id: data?._id }],
       },
     })
-      .then((resData) => console.log(resData?.data?.data))
+      .then((resData) => dispatch(addWish(resData?.data)))
       .catch((err) => toast.error(err?.message));
   };
 

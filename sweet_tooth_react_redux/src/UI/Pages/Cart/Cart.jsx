@@ -1,37 +1,24 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Container, Table } from "reactstrap";
-import { BE_URL } from "../../../Configue";
-import { toast } from "react-toastify";
-import { useParams } from "react-router-dom";
-import { fetchData } from "../../../Redux/Features/ProductSlice/ProSlice";
+import { getAllCart } from "../../../Redux/Features/CartSlice/CartSlice";
 
 function Cart() {
   const dispatch = useDispatch();
+  const [data, setData] = useState([]);
   const { product } = useSelector((state) => state?.productReducer);
-  const { cart, count } = useSelector((state) => state?.cartReducer);
-  console.log("🚀 ~ file: Cart.jsx:14 ~ Cart ~ cart:", cart);
-  const [cartdata, setCartData] = useState();
-  console.log("🚀 ~ file: Cart.jsx:15 ~ Cart ~ cartdata:", cartdata);
+  const { productId, count } = useSelector((state) => state?.cartReducer?.pro);
 
   useEffect(() => {
-    dispatch(fetchData());
+    dispatch(getAllCart());
   }, []);
 
   useEffect(() => {
     let newData = product?.filter?.((e) => {
-      return e?._id == cart;
+      return e?._id == productId?._id;
     });
-    setCartData(newData);
+    setData(newData);
   }, []);
-
-  // useEffect(() => {
-  //   const newData = product?.filter?.((e) => {
-  //     return e?._id === cartdata;
-  //   });
-  //   setProductData(newData);
-  // }, [product]);
 
   return (
     <>
@@ -48,6 +35,7 @@ function Cart() {
               <Table striped class="table-fixed">
                 <thead>
                   <tr>
+                    <th>Sr</th>
                     <th>Product Details</th>
                     <th>Quantity</th>
                     <th>Price</th>
@@ -55,15 +43,18 @@ function Cart() {
                   </tr>
                 </thead>
                 <tbody>
-                  {cartdata?.map?.((e, i) => {
+                  {data?.map?.((e, i) => {
                     return (
                       <tr key={e?._id}>
+                        <td>{i + 1}</td>
                         <td>
-                          <div>
+                          <div className="max-w-sm">
                             <img src={e?.thumbnail} alt="" />
                           </div>
                         </td>
+                        <td>{count}</td>
                         <td>{e?.price}</td>
+                        <td>total</td>
                       </tr>
                     );
                   })}

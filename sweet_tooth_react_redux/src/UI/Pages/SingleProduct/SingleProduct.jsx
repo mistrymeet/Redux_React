@@ -8,7 +8,7 @@ import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { data } from "autoprefixer";
 import {
@@ -19,13 +19,13 @@ import {
 function SingleProduct() {
   let [displayimg, setDisplayImg] = useState(null);
   let [productData, setProductData] = useState({});
+  const dispatch = useDispatch();
 
   let [count, SetCount] = useState(0);
   if (count < 0) {
     return SetCount(0);
   }
   let { id } = useParams();
-  let dispatch = useDispatch();
 
   useEffect(() => {
     axios({
@@ -38,31 +38,43 @@ function SingleProduct() {
       .catch((err) => toast.error(err));
     window.scroll(0, 0);
   }, []);
+  const { cart } = useSelector((state) => state?.cartReducer);
 
+  // 653f61455b07f04cc183ac91
   const addToCart = () => {
-    axios({
-      method: "post",
-      url: `${BE_URL}cart/create`,
-      data: {
-        products: [
-          {
-            productId: productData?._id,
-            count,
-          },
-        ],
-      },
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
-      },
-    })
-      .then((resData) => dispatch(addCart(resData?.data)))
-      .catch((err) => toast.error(err?.message));
-  };
+    console.log("🚀 ~ file: SingleProduct.jsx:45 ~ addToCart ~ id:", id);
+    const index = cart.findIndex((e) => e?.productId?._id === id);
+    console.log("======> index:", index);
+    let inputCart = [...cart];
+    // console.log("count---===>", inputCart[index].count);
+    // console.log("count", count);
+    // console.log("jffffffffffffjj:", inputCart[index].count + count);
+    // let hello = {
+    //   count: inputCart[index].count + count,
+    // };
+    // console.log("🚀 ~ file: SingleProduct.jsx:56 ~ addToCart ~ hello:", hello);
 
-  useEffect(() => {
-    dispatch(getAllCart());
-  }, []);
+    if (index === -1) {
+      inputCart.push({ productId: id, count: count });
+    } else {
+      inputCart[index] = {
+        ...inputCart[index],
+        count: inputCart[index].count + count,
+      };
+    }
+    console.log("------>", cart);
+    // axios({
+    //   method: "post",
+    //   url: `${BE_URL}cart/create`,
+    //   data: inputCart[0],
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+    //   },
+    // })
+    //   .then((resData) => dispatch(addCart(resData?.data)))
+    //   .catch((err) => toast.error(err?.message));
+  };
 
   return (
     <>

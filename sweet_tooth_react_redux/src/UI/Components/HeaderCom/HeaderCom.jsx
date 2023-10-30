@@ -43,6 +43,7 @@ function HeaderCom({ setTextSearch }) {
   const { cart } = useSelector((state) => state?.cartReducer);
 
   useEffect(() => {
+    console.log("==-==-=-=-=-=-=>");
     dispatch(getAllCart());
   }, []);
 

@@ -7,17 +7,11 @@ function Cart() {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const { product } = useSelector((state) => state?.productReducer);
-  const { productId, count } = useSelector((state) => state?.cartReducer?.pro);
+  const { cart, count } = useSelector((state) => state?.cartReducer);
+  console.log("🚀 ~ file: Cart.jsx:11 ~ Cart ~ cart:", cart);
 
   useEffect(() => {
     dispatch(getAllCart());
-  }, []);
-
-  useEffect(() => {
-    let newData = product?.filter?.((e) => {
-      return e?._id == productId?._id;
-    });
-    setData(newData);
   }, []);
 
   return (

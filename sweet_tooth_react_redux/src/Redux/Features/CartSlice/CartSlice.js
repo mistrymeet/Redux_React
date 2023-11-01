@@ -4,7 +4,6 @@ import { BE_URL } from "../../../Configue";
 
 const initialState = {
   cart: [],
-  pro: [],
 };
 
 export const getAllCart = createAsyncThunk("cart/getAllCart", () => {
@@ -25,8 +24,11 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addCart: (state, { payload }) => {
-      state.cart.push(payload);
+      state.cart = payload;
       // state.cart;
+    },
+    removeCart: (state, { payload }) => {
+      state.cart = state.cart.filter((e, i) => i !== payload);
     },
   },
   extraReducers: (builder) => {
@@ -37,4 +39,4 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const { addCart, getCart } = cartSlice.actions;
+export const { addCart, removeCart } = cartSlice.actions;

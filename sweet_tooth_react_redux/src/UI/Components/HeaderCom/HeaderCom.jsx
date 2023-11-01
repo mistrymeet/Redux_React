@@ -19,10 +19,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineHeart } from "react-icons/ai";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
-import {
-  getAllCart,
-  getCart,
-} from "../../../Redux/Features/CartSlice/CartSlice";
+import { getAllCart } from "../../../Redux/Features/CartSlice/CartSlice";
 import { searchInput } from "../../../Redux/Features/SearchSlice/SearchSlice";
 
 function HeaderCom({ setTextSearch }) {

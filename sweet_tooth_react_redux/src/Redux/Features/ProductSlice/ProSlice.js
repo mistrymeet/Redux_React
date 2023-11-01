@@ -5,7 +5,6 @@ import { BE_URL } from "../../../Configue";
 const initialState = {
   product: [],
   err: "",
-  topFourData: [],
 };
 
 export const fetchData = createAsyncThunk("product/fetchData", () => {
@@ -46,7 +45,6 @@ const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-    add: (state, { payload }) => {},
     updateProduct: (state, { payload }) => {
       state.product.splice(payload.index, 1, payload.data);
     },
@@ -70,4 +68,4 @@ const productSlice = createSlice({
 });
 
 export default productSlice.reducer;
-export const { add, updateProduct } = productSlice.actions;
+export const { top, updateProduct } = productSlice.actions;

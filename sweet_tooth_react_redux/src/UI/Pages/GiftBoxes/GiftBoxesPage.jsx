@@ -14,6 +14,7 @@ function GiftBoxesPage({ textsearch }) {
   let navigate = useNavigate();
   let dispatch = useDispatch();
   let { product, err } = useSelector((state) => state?.productReducer);
+  let { search } = useSelector((state) => state?.searchReducer);
 
   useEffect(() => {
     dispatch(fetchData);
@@ -22,10 +23,13 @@ function GiftBoxesPage({ textsearch }) {
 
   useEffect(() => {
     let newdata = product?.filter?.((e) => {
-      return e?.category?.some?.((e) => e === "giftbox");
+      return (
+        e?.category?.some?.((e) => e === "giftbox") &&
+        e?.title?.toLowerCase?.()?.includes?.(search?.toLowerCase?.())
+      );
     });
     setData(newdata);
-  }, [product]);
+  }, [product, search]);
 
   let fetch = (id) => {
     navigate(`/singleproduct/${id}`);

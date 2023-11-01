@@ -22,9 +22,11 @@ function SingleProduct() {
   const dispatch = useDispatch();
 
   let [count, SetCount] = useState(0);
-  if (count < 0) {
-    return SetCount(0);
-  }
+  useEffect(() => {
+    if (count < 0) {
+      return SetCount(0);
+    }
+  }, []);
   let { id } = useParams();
 
   useEffect(() => {
@@ -54,26 +56,36 @@ function SingleProduct() {
     // };
     // console.log("🚀 ~ file: SingleProduct.jsx:56 ~ addToCart ~ hello:", hello);
 
+    console.log("------>", inputCart);
     if (index === -1) {
       inputCart.push({ productId: id, count: count });
     } else {
+      let oldCount = inputCart[index].count + count;
+      console.log(
+        "🚀 ~ file: SingleProduct.jsx:61 ~ addToCart ~ oldCount:",
+        oldCount
+      );
       inputCart[index] = {
-        ...inputCart[index],
-        count: inputCart[index].count + count,
+        productId: inputCart[index].productId?._id,
+        count: oldCount,
       };
     }
-    console.log("------>", cart);
-    // axios({
-    //   method: "post",
-    //   url: `${BE_URL}cart/create`,
-    //   data: inputCart[0],
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
-    //   },
-    // })
-    //   .then((resData) => dispatch(addCart(resData?.data)))
-    //   .catch((err) => toast.error(err?.message));
+    console.log("------>", inputCart);
+    axios({
+      method: "post",
+      url: `${BE_URL}cart/create`,
+      data: { products: inputCart },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
+      },
+    })
+      .then((resData) => {
+        dispatch(getAllCart());
+      })
+      .catch((err) => toast.error(err?.message));
+
+    SetCount(0);
   };
 
   return (

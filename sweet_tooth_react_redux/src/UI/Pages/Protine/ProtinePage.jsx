@@ -20,13 +20,17 @@ function ProtinePage({ textsearch }) {
   }, []);
 
   let { product, err } = useSelector((state) => state?.productReducer);
+  let { search } = useSelector((state) => state.searchReducer);
 
   useEffect(() => {
     let newdata = product?.filter?.((e) => {
-      return e?.category?.some?.((e) => e === "protine");
+      return (
+        e?.category?.some?.((e) => e === "protine") &&
+        e?.title?.toLowerCase?.()?.includes?.(search?.toLowerCase?.())
+      );
     });
     setData(newdata);
-  }, [product]);
+  }, [product, search]);
 
   let fetch = (id) => {
     navigate(`/singleproduct/${id}`);

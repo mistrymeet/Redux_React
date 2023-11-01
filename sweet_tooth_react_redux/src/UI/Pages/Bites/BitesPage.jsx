@@ -22,12 +22,17 @@ function BitesPage({ textsearch }) {
     return state.productReducer;
   });
 
+  const { search } = useSelector((state) => state?.searchReducer);
+
   useEffect(() => {
     let newdata = product?.filter?.((e) => {
-      return e?.category?.some?.((e) => e === "bits");
+      return (
+        e?.category?.some?.((e) => e === "bits") &&
+        e?.title?.toLowerCase?.()?.includes?.(search?.toLowerCase?.())
+      );
     });
     setData(newdata);
-  }, [product]);
+  }, [product, search]);
 
   let fetch = (id) => {
     navigate(`/singleproduct/${id}`);

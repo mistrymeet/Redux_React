@@ -27,31 +27,17 @@ import SingleProduct from "../UI/Pages/SingleProduct/SingleProduct";
 import Wishlist from "../UI/Pages/Wishlist/Wishlist";
 
 function RouterCom() {
-  let [textsearch, setTextSearch] = useState("");
-
   return (
     <>
       <Provider store={authStore}>
         <BrowserRouter>
-          <HeaderCom setTextSearch={setTextSearch} />
+          <HeaderCom />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route
-              path="/bars"
-              element={<BarsPage textsearch={textsearch} />}
-            />
-            <Route
-              path="/bites"
-              element={<BitesPage textsearch={textsearch} />}
-            />
-            <Route
-              path="/protine"
-              element={<ProtinePage textsearch={textsearch} />}
-            />
-            <Route
-              path="/gift"
-              element={<GiftBoxesPage textsearch={textsearch} />}
-            />
+            <Route path="/bars" element={<BarsPage />} />
+            <Route path="/bites" element={<BitesPage />} />
+            <Route path="/protine" element={<ProtinePage />} />
+            <Route path="/gift" element={<GiftBoxesPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />

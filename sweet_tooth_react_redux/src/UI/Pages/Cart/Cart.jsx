@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button, Container, Table } from "reactstrap";
-import {
-  getAllCart,
-  removeCart,
-} from "../../../Redux/Features/CartSlice/CartSlice";
+import { getAllCart } from "../../../Redux/Features/CartSlice/CartSlice";
 import { AiFillDelete, AiOutlineDelete } from "react-icons/ai";
 import { TbEdit, TbHeart, TbMinus, TbPlus } from "react-icons/tb";
 import axios from "axios";
@@ -12,30 +9,79 @@ import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
 
 function Cart() {
-  // const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
-  const { product } = useSelector((state) => state?.productReducer);
   const { cart } = useSelector((state) => state?.cartReducer);
-  console.log("🚀 ~ file: Cart.jsx:10 ~ Cart ~ cart:", cart);
+  const [final, setFinal] = useState();
+  console.log("🚀 ~ file: Cart.jsx:14 ~ Cart ~ cart:", cart);
 
   useEffect(() => {
     dispatch(getAllCart());
   }, []);
 
-  // const increase = (count, i) => {
-  //   console.log("con", count);
-  // };
+  const total = () => {
+    let sum = 0;
+    cart.forEach((e) => {
+      sum += e.productId.price * e.count;
+    });
+    return sum;
+  };
 
-  const deleteHandler = (data, index) => {
+  const deleteHandler = async (data, index) => {
+    let filterdData = [];
+    await cart.map((e, i) => {
+      if (data._id !== e.productId._id) {
+        filterdData.push({ productId: e.productId._id, count: e.count });
+      }
+    });
+
     axios({
-      method: "delete",
-      url: `${BE_URL}cart/delete/${data._id}`,
+      method: "post",
+      url: `${BE_URL}cart/create`,
+      data: { products: filterdData },
       headers: {
         "Content-Type": "application/json",
         Authorization: `Berar ${JSON.parse(localStorage.getItem("token"))}`,
       },
     })
-      .then((resData) => dispatch(removeCart(index)))
+      .then(({ data }) => dispatch(getAllCart(data)))
+      .catch((err) => toast.error(err.message));
+  };
+
+  const countUpdateHandler = (data, type) => {
+    const modifiedCart = cart?.map?.((e, i) => {
+      if (e.productId._id === data._id)
+        return {
+          productId: e.productId._id,
+          count: type === "INC" ? e.count + 1 : e.count - 1,
+        };
+      else
+        return {
+          count: e.count,
+          productId: e.productId._id,
+        };
+    });
+
+    let newCartData = modifiedCart.filter((e) => {
+      if (e.count < 0) {
+        return (e.count = 0);
+      } else {
+        return e.count > 0;
+      }
+    });
+
+    axios({
+      method: "post",
+      url: `${BE_URL}cart/create`,
+      data: { products: newCartData },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearar ${JSON.parse(localStorage.getItem("token"))}`,
+      },
+    })
+      .then((resData) => {
+        console.log("🚀 ~ file: Cart.jsx:64 ~ .then ~ resData:", resData);
+        dispatch(getAllCart());
+      })
       .catch((err) => toast.error(err.message));
   };
 
@@ -47,7 +93,7 @@ function Cart() {
             <div className="row d-flex justify-content-center my-4">
               <div className="col-md-8">
                 <div className="card hover:shadow-none">
-                  <div className="card-header py-3">
+                  <div className="card-header py-3 flex justify-between items-center">
                     <h5 className="mb-0">Cart - {cart.length} items</h5>
                   </div>
                   {cart?.map?.(({ productId, count }, i) => {
@@ -86,12 +132,11 @@ function Cart() {
                             <p className="truncate">{productId?.description}</p>
                             <Button
                               color="info"
-                              className="me-2"
                               onClick={() => deleteHandler(productId, i)}
                             >
                               <AiOutlineDelete />
                             </Button>
-                            <Button color="danger" className="me-2">
+                            <Button color="danger" className="mx-2">
                               <TbHeart />
                             </Button>
                             {/* Data */}
@@ -105,27 +150,43 @@ function Cart() {
                               Quantity
                             </label>
                             <div className=" flex mb-4 max-w-lg">
-                              <Button color="info" className="me-2 h-auto">
+                              <Button
+                                color="info"
+                                className="me-2 h-auto"
+                                onClick={() =>
+                                  countUpdateHandler(productId, "DEC")
+                                }
+                              >
                                 <TbMinus />
                               </Button>
                               <div className="flex flex-col text-center ">
                                 <input
+                                  disabled
                                   id="form1"
                                   min={0}
                                   name="quantity"
-                                  defaultValue={count}
+                                  value={count}
                                   type="number"
                                   className="form-control"
                                 />
                               </div>
-                              <Button color="info" className="ms-2">
+                              <Button
+                                color="info"
+                                className="ms-2"
+                                onClick={() =>
+                                  countUpdateHandler(productId, "INC")
+                                }
+                              >
                                 <TbPlus />
                               </Button>
                             </div>
                             {/* Quantity */}
                             {/* Price */}
                             <p className="text-start text-md-center">
-                              <strong>₹ {productId?.price}</strong>
+                              <strong>
+                                ₹ {productId?.price} * {count} ={" "}
+                                {productId?.price * count}
+                              </strong>
                             </p>
                             {/* Price */}
                           </div>
@@ -146,11 +207,19 @@ function Cart() {
                     <ul className="list-group list-group-flush">
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                         Products
-                        <span>$53.98</span>
+                        <span>{total()}</span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                         Shipping
-                        <span>Gratis</span>
+                        <span>
+                          {total() <= 0 ? (
+                            0
+                          ) : total() > 1000 ? (
+                            <span className="text-lime-500">free</span>
+                          ) : (
+                            <span className="text-red-600">+ 300</span>
+                          )}
+                        </span>
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                         <div>
@@ -160,16 +229,28 @@ function Cart() {
                           </strong>
                         </div>
                         <span>
-                          <strong>$53.98</strong>
+                          <strong>
+                            {total() >= 10000
+                              ? total() - (total() * 10) / 100
+                              : total() <= 0
+                              ? 0
+                              : total() > 1000
+                              ? total()
+                              : total() + 300}
+                          </strong>
                         </span>
                       </li>
                     </ul>
                     <button
                       type="button"
-                      className="btn btn-primary btn-lg btn-block"
+                      className="btn btn-primary btn-lg btn-block mb-2"
                     >
                       Go to checkout
                     </button>
+                    <marquee className="text-red-600">
+                      Special 10% discount is live if you purchase 10000 or
+                      more...{" "}
+                    </marquee>
                   </div>
                 </div>
               </div>

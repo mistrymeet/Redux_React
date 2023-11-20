@@ -11,10 +11,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../../Redux/Features/AuthSlice/AuthSlice";
 import { data } from "autoprefixer";
-import {
-  addCart,
-  getAllCart,
-} from "../../../Redux/Features/CartSlice/CartSlice";
+import { getAllCart } from "../../../Redux/Features/CartSlice/CartSlice";
 
 function SingleProduct() {
   let [displayimg, setDisplayImg] = useState(null);

@@ -10,7 +10,6 @@ function BarsPage({ textsearch }) {
   let [productdata, setProductData] = useState([]);
   const dispatch = useDispatch();
   const { search } = useSelector((state) => state?.searchReducer);
-  console.log("🚀 ~ file: BarsPage.jsx:13 ~ BarsPage ~ search:", search);
 
   useEffect(() => {
     dispatch(fetchData());

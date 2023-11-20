@@ -23,12 +23,8 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addCart: (state, { payload }) => {
-      state.cart = payload;
-      // state.cart;
-    },
-    removeCart: (state, { payload }) => {
-      state.cart = state.cart.filter((e, i) => i !== payload);
+    emptyCart: (state) => {
+      state.cart = [];
     },
   },
   extraReducers: (builder) => {
@@ -39,4 +35,4 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const { addCart, removeCart } = cartSlice.actions;
+export const { emptyCart } = cartSlice.actions;

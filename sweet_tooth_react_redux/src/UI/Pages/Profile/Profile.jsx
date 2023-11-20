@@ -13,6 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Profile.css";
+import { emptyCart } from "../../../Redux/Features/CartSlice/CartSlice";
 
 function Profile() {
   const AuthData = useSelector((state) => {
@@ -24,6 +25,7 @@ function Profile() {
   let navigate = useNavigate();
 
   function removeUser() {
+    dispatch(emptyCart());
     dispatch(logout());
     navigate("/signin");
     toast.success("Logout SuccessFully");

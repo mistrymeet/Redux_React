@@ -21,6 +21,7 @@ import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { getAllCart } from "../../../Redux/Features/CartSlice/CartSlice";
 import { searchInput } from "../../../Redux/Features/SearchSlice/SearchSlice";
+import { getAllWish } from "../../../Redux/Features/WishListSlice/WishListSlice";
 
 function HeaderCom({ setTextSearch }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +41,13 @@ function HeaderCom({ setTextSearch }) {
   const { cart } = useSelector((state) => state?.cartReducer);
 
   useEffect(() => {
-    console.log("==-==-=-=-=-=-=>");
+    console.log("===========");
     dispatch(getAllCart());
+  }, []);
+
+  useEffect(() => {
+    console.log("=====>>>>>");
+    dispatch(getAllWish(auth._id));
   }, []);
 
   useEffect(() => {
@@ -51,7 +57,7 @@ function HeaderCom({ setTextSearch }) {
   return (
     <div>
       <Navbar
-        expand={"lg"}
+        expand={"xl"}
         container={"sm"}
         className="navigation flex backdrop-blur-sm"
         fixed="top"

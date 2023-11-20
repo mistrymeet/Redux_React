@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import "./CardCom.css";
 import { CgHeart } from "react-icons/cg";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { BE_URL } from "../../../Configue";
 import { toast } from "react-toastify";
@@ -10,7 +10,18 @@ import { addWish } from "../../../Redux/Features/WishListSlice/WishListSlice";
 
 function CardCom({ data, onclick }) {
   const dispatch = useDispatch();
+  const { wishlist } = useSelector((state) => state.wishReducer);
+
   const addWishList = () => {
+    const index = wishlist.indexOf(data?._id);
+    let inputWish = [...wishlist];
+
+    if (index === -1) {
+      inputWish.push(data?._id);
+    } else {
+      null; // Remove the product from the wishlist
+    }
+
     axios({
       method: "post",
       url: `${BE_URL}wishlist/create`,
@@ -19,10 +30,10 @@ function CardCom({ data, onclick }) {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
       },
       data: {
-        products: [{ ...data, id: data?._id }],
+        products: inputWish,
       },
     })
-      .then((resData) => dispatch(addWish(resData?.data)))
+      .then((resData) => console.log("resData", resData))
       .catch((err) => toast.error(err?.message));
   };
 

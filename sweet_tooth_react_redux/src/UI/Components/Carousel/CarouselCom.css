@@ -1,0 +1,80 @@
+@media (max-width: 576px) {
+
+    .carousal-main .img1 {
+        height: 400px !important;
+    }
+
+    .carousal-main .img2 {
+        height: 400px !important;
+    }
+
+    .carousal-main .first-scroll {
+        top: 100px !important;
+        font-size: 50px !important;
+    }
+
+    .second-scroll {
+        top: 230px !important;
+        font-size: 50px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousal-main .first-scroll {
+        top: 140px !important;
+        font-size: 50px !important;
+    }
+
+    .second-scroll {
+        top: 250px !important;
+        font-size: 50px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousal-main .first-scroll {
+        top: 180px !important;
+        font-size: 80px !important;
+    }
+
+    .second-scroll {
+        top: 320px !important;
+        font-size: 80px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousal-main .first-scroll {
+        top: 180px !important;
+        font-size: 100px !important;
+    }
+
+    .second-scroll {
+        top: 380px !important;
+        font-size: 100px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousal-main .first-scroll {
+        top: 140px !important;
+        font-size: 200px !important;
+    }
+
+    .second-scroll {
+        top: 420px !important;
+        font-size: 200px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousal-main .first-scroll {
+        top: 160px !important;
+        font-size: 200px !important;
+    }
+
+    .second-scroll {
+        top: 550px !important;
+        font-size: 200px !important;
+    }
+}

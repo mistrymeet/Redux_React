@@ -35,7 +35,7 @@ function Ing() {
           </h1>
         </div>
         <div className="offer-attach">
-          <div className="flex justify-center items-center gap-5 h-full">
+          <div className="flex justify-center items-center gap-5 h-full flex-wrap">
             {data?.map?.((e, i) => {
               return (
                 <div
